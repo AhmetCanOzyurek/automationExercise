@@ -1,9 +1,8 @@
-package Soru1;
+package AE;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
-import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import utilities.TestBAse;
@@ -33,5 +32,10 @@ public class _3_TestCase extends TestBAse {
         //8. Verify error 'Your email or password is incorrect!' is visible
         WebElement errorIncorrect = driver.findElement(By.xpath("//*[text()='Your email or password is incorrect!']"));
         softAssert.assertTrue(errorIncorrect.isDisplayed());
+
+
+
+        softAssert.assertAll();
     }
+
 }

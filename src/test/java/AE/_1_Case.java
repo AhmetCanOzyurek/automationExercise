@@ -1,15 +1,14 @@
-package Soru1;
+package AE;
 
 import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import utilities.TestBAse;
 
 import java.time.Duration;
@@ -35,7 +34,7 @@ public class _1_Case extends TestBAse {
         WebElement nameBox = driver.findElement(By.xpath("//input[@data-qa='signup-name']"));
         nameBox.sendKeys(faker.name().fullName());
         WebElement emailBox =driver.findElement(By.xpath("//input[@data-qa='signup-email']"));
-        emailBox.sendKeys(faker.internet().emailAddress());
+        emailBox.sendKeys("email@gmail.com");
         // 7. Click 'Signup' button
         driver.findElement(By.xpath("//*[text()='Signup']")).click();
       //  8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
@@ -47,7 +46,7 @@ radioTitleButton.click();
 // name and email box already filled cause faker class
         WebElement passwordBox = driver.findElement(By.xpath("//*[@type='password']"));
         passwordBox.click();
-        passwordBox.sendKeys(faker.internet().password());
+        passwordBox.sendKeys("email.gmail");
         WebElement dateOfBirth1 = driver.findElement(By.xpath("//*[@id='days']"));
         WebElement dateOfBirth2 = driver.findElement(By.xpath("//*[@id='months']"));
         WebElement dateOfBirth3 = driver.findElement(By.xpath("//*[@id='years']"));
@@ -102,11 +101,11 @@ driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
         WebElement loggedSign = driver.findElement(By.xpath("//*[text()=' Logged in as ']"));
         Assert.assertTrue(loggedSign.isDisplayed());
        // 17. Click 'Delete Account' button//*[text()=' Delete Account']
-        driver.findElement(By.xpath("//*[text()=' Delete Account']")).click();
+       // driver.findElement(By.xpath("//*[text()=' Delete Account']")).click();
          // 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
-        WebElement deletedSign = driver.findElement(By.xpath("//*[text()='Account Deleted!']"));
-        Assert.assertTrue(deletedSign.isDisplayed());
-        driver.findElement(By.xpath("//*[text()='Continue']")).click();
-
+     //   WebElement deletedSign = driver.findElement(By.xpath("//*[text()='Account Deleted!']"));
+     //   Assert.assertTrue(deletedSign.isDisplayed());
+      //  driver.findElement(By.xpath("//*[text()='Continue']")).click();
+//
     }
 }

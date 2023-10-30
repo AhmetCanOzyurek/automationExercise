@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="AutomationExercise">
+    <test name="Incorrect User credentials">
+        <classes>
+            <class name="AE._3_TestCase"></class>
+        </classes>
+    </test>
+</suite>

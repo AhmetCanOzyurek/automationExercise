@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AE">
+    <test name="AE 1-2">
+        <classes>
+            <class name="AE._1_Case"></class>
+           <!--- <class name="AE._2_CaseAX"></class>-->
+        </classes>
+    </test>
+</suite>

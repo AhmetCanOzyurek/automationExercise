@@ -4,11 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.TestBAse;
+import utilities.TestBase;
 
-import java.rmi.StubNotFoundException;
-
-public class _8_TestCasse extends TestBAse {
+public class _8_TestCasse extends TestBase {
     @Test
     public void allProductsDetailPage08 (){
        // 1. Launch browser

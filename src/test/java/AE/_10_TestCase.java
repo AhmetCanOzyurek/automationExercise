@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.TestBAse;
+import utilities.TestBase;
 
-public class _10_TestCase extends TestBAse {
+public class _10_TestCase extends TestBase {
 
     @Test
     public void subscriptionTest(){

@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.TestBAse;
+import utilities.TestBase;
 
-public class _2_CaseAX extends TestBAse {
+public class _2_CaseAX extends TestBase {
     @Test
     public void secCase() {
 

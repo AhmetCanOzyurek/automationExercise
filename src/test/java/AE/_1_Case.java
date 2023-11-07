@@ -1,19 +1,15 @@
 package AE;
 
 import com.github.javafaker.Faker;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utilities.TestBAse;
+import utilities.TestBase;
 
-import java.time.Duration;
-
-public class _1_Case extends TestBAse {
+public class _1_Case extends TestBase {
     @Test
     public void Test01() throws InterruptedException {
         Actions actions = new Actions(driver);

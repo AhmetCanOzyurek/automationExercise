@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.TestBAse;
+import utilities.TestBase;
 
-public class _6_TestCase extends TestBAse {
+public class _6_TestCase extends TestBase {
     @Test
     public void contactUsFrom(){
        // 2. Navigate to url 'http://automationexercise.com'

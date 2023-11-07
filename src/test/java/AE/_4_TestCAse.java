@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.TestBAse;
+import utilities.TestBase;
 
-public class _4_TestCAse extends TestBAse {
+public class _4_TestCAse extends TestBase {
     @Test
     public void logoutUserTest(){
         //1. Launch browser

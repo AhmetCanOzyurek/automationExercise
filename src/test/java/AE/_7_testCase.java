@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.TestBAse;
+import utilities.TestBase;
 
-public class _7_testCase extends TestBAse {
+public class _7_testCase extends TestBase {
     @Test
     public void testCasesPage(){
       //2. Navigate to url 'http://automationexercise.com'

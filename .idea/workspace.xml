@@ -4,36 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="12.testCaseAE">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AE/TestDosyası" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Soru1/_2_Case.java" afterDir="false" />
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="productQuantityTest">
+      <change afterPath="$PROJECT_DIR$/.idea/mavenProjectSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AE/_14_TestCase.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/day03/C01_hepsiBuradaTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_10_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_10_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_12_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_12_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_1_Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_1_Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_2_CaseAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_2_CaseAX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_3_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_3_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_4_TestCAse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_4_TestCAse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_5_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_5_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_6_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_6_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_7_testCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_7_testCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_8_TestCasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_8_TestCasse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_9_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_9_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Soru1/_2_CaseAX.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBAse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,12 +31,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Dorleada"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Dorleada&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -80,10 +66,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.testRunning&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/enesoncu/IdeaProjects/automationExercise&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -97,7 +84,7 @@
       <recent name="AE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG._12_TestCase.AddProductsInCart">
+  <component name="RunManager" selected="TestNG._14_TestCase.placeOrder">
     <configuration name="_11_TestCase" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AE._11_TestCase" />
       <module name="automationExercise" />
@@ -111,24 +98,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_10_TestCase.subscriptionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE._10_TestCase" />
-      <option name="METHOD_NAME" value="subscriptionTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_12_TestCase.AddProductsInCart" type="TestNG" nameIsGenerated="true">
       <module name="automationExercise" />
       <shortenClasspath name="NONE" />
@@ -179,6 +148,77 @@
         <value defaultName="moduleWithDependencies" />
       </option>
       <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_13_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._13_TestCase" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_13_TestCase.productQuantity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._13_TestCase" />
+      <option name="METHOD_NAME" value="productQuantity" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_14_TestCase.placeOrder (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._14_TestCase" />
+      <option name="METHOD_NAME" value="placeOrder" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_14_TestCase.placeOrder" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._14_TestCase" />
+      <option name="METHOD_NAME" value="placeOrder" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -203,15 +243,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/enesoncu/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$USER_HOME$/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml" />
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._13_TestCase" />
+      <option name="METHOD_NAME" value="productQuantity" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application._11_TestCase" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
-      <item itemvalue="TestNG._10_TestCase.subscriptionTest" />
+      <item itemvalue="TestNG._14_TestCase.placeOrder" />
+      <item itemvalue="TestNG._14_TestCase.placeOrder (1)" />
+      <item itemvalue="TestNG./Users/enesoncu/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml" />
+      <item itemvalue="TestNG._13_TestCase" />
+      <item itemvalue="TestNG._13_TestCase.productQuantity" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG._10_TestCase.subscriptionTest" />
+        <item itemvalue="TestNG._14_TestCase.placeOrder" />
+        <item itemvalue="TestNG._14_TestCase.placeOrder (1)" />
+        <item itemvalue="TestNG._13_TestCase" />
+        <item itemvalue="TestNG._13_TestCase.productQuantity" />
+        <item itemvalue="TestNG./Users/enesoncu/Library/Caches/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +398,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699297221971</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="FullFrameWork">
+      <option name="closed" value="true" />
+      <created>1699351732627</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699351732627</updated>
+    </task>
+    <task id="LOCAL-00015" summary="productQuantityTest">
+      <option name="closed" value="true" />
+      <created>1699974083537</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699974083537</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -359,7 +442,9 @@
     <MESSAGE value="10.testCaseAE/subscriptionTest" />
     <MESSAGE value="11.testCaseAE/cartSubscriptionTest" />
     <MESSAGE value="12.testCaseAE" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.testCaseAE" />
+    <MESSAGE value="FullFrameWork" />
+    <MESSAGE value="productQuantityTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="productQuantityTest" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

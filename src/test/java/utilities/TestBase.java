@@ -2,10 +2,7 @@ package utilities;
 
 import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,6 +13,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
+
+import static utilities.Locators.*;
+import static utilities.Locators.lCountryDDM;
 
 public class TestBase {
     public static WebDriver driver;
@@ -66,6 +66,82 @@ public class TestBase {
     protected void onMouse( By locator){
     WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     actions.moveToElement(element).perform();
+}
+protected void newUserSignUp(){
+    String fakerEmail = faker.internet().emailAddress();
+    String fakerUsername = faker.rickAndMorty().character();
+    String fakerPassword = faker.internet().password();
+
+    sendKeys(lNewUserSignupNameBox, fakerUsername);
+    sendKeys(lNewUserSignupEmailBox, fakerEmail);
+    click(lNewUserSignupButton);
+
+    ///////////
+    WebElement DDMdays = driver.findElement(By.cssSelector("#days"));
+    WebElement DDMmonths = driver.findElement(By.cssSelector("#months"));
+    WebElement DDMyears = driver.findElement(By.cssSelector("#years"));
+
+    WebElement ePasswordBox = driver.findElement(lPasswordBox);
+    click(lGenderRadioMr);
+
+
+    actions.click(ePasswordBox)
+            .sendKeys(fakerPassword).perform();
+    select = new Select(DDMdays);
+    select.selectByValue("1");
+    select = new Select(DDMmonths);
+    select.selectByValue("1");
+    select = new Select(DDMyears);
+    select.selectByVisibleText("2000");
+
+    WebElement eCheckBox1  = driver.findElement(lCheckBox1);
+    WebElement eCheckbox2 = driver.findElement(lCheckBox2);
+    actions.click(eCheckBox1).click(eCheckbox2)
+            .sendKeys(Keys.TAB)
+            .sendKeys(faker.name().firstName()+ Keys.TAB )
+            .sendKeys(faker.name().lastName() + Keys.TAB)
+            .sendKeys("muz" + Keys.TAB)
+            .sendKeys(faker.rickAndMorty().location() + Keys.TAB)
+            .sendKeys(faker.rickAndMorty().location() + Keys.TAB)
+            .perform();
+
+    WebElement countryDDM = driver.findElement(lCountryDDM);
+    select = new Select(countryDDM);
+    select.selectByVisibleText("Canada");
+
+    actions.sendKeys( Keys.TAB + "hela"+ Keys.TAB)
+            .sendKeys(faker.rickAndMorty().location() + Keys.TAB)
+            .sendKeys("ankarara"+ Keys.TAB)
+            .sendKeys(faker.address().countryCode()+ Keys.TAB)
+            .sendKeys(faker.phoneNumber().cellPhone()+ Keys.ENTER).perform();
+
+}
+protected void addProductsToCard(int numberOfProduct){
+    String dynmaicXpath;
+    for (int i = 1; i <=numberOfProduct ; i++) {
+        dynmaicXpath = "(//a[@data-product-id='"+i+"'])[1]";
+        element = driver.findElement(By.xpath(dynmaicXpath));
+        click(element);
+        click(lContinueShopping);
+    }
+}
+protected void verifyAdressDetails(){
+
+    WebElement adressBox = driver.findElement(By.cssSelector("#address_delivery"));
+    String actualAdressStr = adressBox.getText();
+    String expectedAdress = "Canada";
+
+    softAssert.assertTrue(actualAdressStr.contains(expectedAdress));
+}
+protected void fillCreditCardCredentials(){
+    WebElement eNameOnCardBox = driver.findElement(lNameOnCard);
+    actions.click(eNameOnCardBox)
+            .sendKeys(faker.rickAndMorty().character() + Keys.TAB)
+            .sendKeys(faker.business().creditCardNumber() + Keys.TAB)
+            .sendKeys("234" + Keys.TAB)
+            .sendKeys("11" + Keys.TAB)
+            .sendKeys("29" + Keys.ENTER).perform();
+    bekle(3);
 }
 protected  void bekle(int saniye){
     try {

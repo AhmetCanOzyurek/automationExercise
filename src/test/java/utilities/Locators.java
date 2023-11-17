@@ -8,7 +8,12 @@ public interface Locators {
     By lAddToCartButton = By.xpath("(//a[@data-product-id='1'])[1]");
     By lAddToCartButton2 = By.xpath("(//a[@data-product-id='2'])[1]");
     By lContinueShopping = By.xpath("//*[.='Continue Shopping']");
+  //AbovePageLinks
     By lCart = By.xpath("//a[text()=' Cart']");
+        // cart page
+            By lProceedToChckout =  By.xpath("//*[text()='Proceed To Checkout']");
+
+    By lSignupLogin = By.xpath("//*[text()=' Signup / Login']");
     By lShoppingCartTxt = By.xpath("//*[text()='Shopping Cart']");
     By lWievCart = By.xpath("//*[text()='View Cart']");
     By lviewProduct = By.xpath("(//*[text()='View Product'])[1]");
@@ -26,6 +31,7 @@ By lPasswordBox = By.xpath("//input[@name='password']");
 By lCheckBox1 = By.xpath("(//input[@type='checkbox'])[1]");
 By lCheckBox2 = By.xpath("(//input[@type='checkbox'])[2]");
 By lCountryDDM = By.cssSelector("#country");
+By lAccountCreatedText = By.xpath("//*[text()='Account Created!']");
 
 // Checkout
     By lDescription = By.cssSelector(".form-control");

@@ -12,7 +12,7 @@ public interface Locators {
     By lCart = By.xpath("//a[text()=' Cart']");
         // cart page
             By lProceedToChckout =  By.xpath("//*[text()='Proceed To Checkout']");
-
+            By lRemoveProductFrmCart = By.xpath("(//i[@class='fa fa-times'])[1]");
     By lSignupLogin = By.xpath("//*[text()=' Signup / Login']");
     By lShoppingCartTxt = By.xpath("//*[text()='Shopping Cart']");
     By lWievCart = By.xpath("//*[text()='View Cart']");

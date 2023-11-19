@@ -4,6 +4,18 @@ import org.openqa.selenium.By;
 
 public interface Locators {
     By lmainPage = By.xpath("//div[@class='logo pull-left']");
+        //Main Page
+            By lCategoryLeftSide = By.xpath("//h2[text()='Category']");
+            By lWomenCategoru = By.xpath("(//span[@class='badge pull-right'])[1]");
+                //Women Category
+                    By lWomenDress = By.xpath("(//a[contains(text(),'Dress')])[1]");
+                        //Women dress page
+                            By lWomenDressText = By.xpath("//*[contains(text(),'Women > Dress')]");
+            By lMenCategoru = By.xpath("(//span[@class='badge pull-right'])[2]");
+                //Men category
+                    By lMenTshirt = By.xpath("//a[contains(text(),'Tshirts')]");
+                        //Men TshirtPage
+                            By lMenTshirtPageTxt = By.xpath("//*[contains(text(),'Men > Tshirts')]");
     By lProductButton = By.xpath("//*[text()=' Products']");
     By lAddToCartButton = By.xpath("(//a[@data-product-id='1'])[1]");
     By lAddToCartButton2 = By.xpath("(//a[@data-product-id='2'])[1]");

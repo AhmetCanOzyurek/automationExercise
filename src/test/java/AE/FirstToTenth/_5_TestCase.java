@@ -1,4 +1,4 @@
-package AE;
+package AE.FirstToTenth;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

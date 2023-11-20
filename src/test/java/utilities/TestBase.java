@@ -67,6 +67,13 @@ public class TestBase {
     WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     actions.moveToElement(element).perform();
 }
+protected void verifyYourOrderHasBeenPlaced(){
+    driver.navigate().back();
+    verifyVisibility(By.cssSelector("div[id = 'success_message']"));
+    click(By.cssSelector("#submit"));
+    bekle(3);
+    click(By.xpath("//*[text()='Continue']"));
+}
 protected void newUserSignUp(){
     String fakerEmail = faker.internet().emailAddress();
     String fakerUsername = faker.rickAndMorty().character();

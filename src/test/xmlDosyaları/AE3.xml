@@ -3,7 +3,7 @@
 <suite name="AutomationExercise">
     <test name="Incorrect User credentials">
         <classes>
-            <class name="AE._3_TestCase"></class>
+            <class name="AE.FirstToTenth._3_TestCase"></class>
         </classes>
     </test>
 </suite>

@@ -20,11 +20,16 @@ public interface Locators {
     By lAddToCartButton = By.xpath("(//a[@data-product-id='1'])[1]");
     By lAddToCartButton2 = By.xpath("(//a[@data-product-id='2'])[1]");
     By lContinueShopping = By.xpath("//*[.='Continue Shopping']");
-  //AbovePageLinks
+  //TopBar
     By lCart = By.xpath("//a[text()=' Cart']");
         // cart page
             By lProceedToChckout =  By.xpath("//*[text()='Proceed To Checkout']");
+                //Checkout
+                    By lRegisterLoginChckout = By.xpath("//*[text()='Register / Login']");
             By lRemoveProductFrmCart = By.xpath("(//i[@class='fa fa-times'])[1]");
+    By lDeleteAccount = By.xpath("//*[text()=' Delete Account']");
+        //accountDeleted
+            By lAccountDeletedTxt = By.xpath("//*[text()='Account Deleted!']");
     By lSignupLogin = By.xpath("//*[text()=' Signup / Login']");
     By lShoppingCartTxt = By.xpath("//*[text()='Shopping Cart']");
     By lWievCart = By.xpath("//*[text()='View Cart']");
@@ -44,10 +49,11 @@ By lCheckBox1 = By.xpath("(//input[@type='checkbox'])[1]");
 By lCheckBox2 = By.xpath("(//input[@type='checkbox'])[2]");
 By lCountryDDM = By.cssSelector("#country");
 By lAccountCreatedText = By.xpath("//*[text()='Account Created!']");
-
+By lLoggedAsUsernameTxt = By.xpath("//*[text()='Account Created!']");
 // Checkout
     By lDescription = By.cssSelector(".form-control");
 By lPlaceOrder = By.xpath("//*[text()='Place Order']");
+
 
 
 //Payment

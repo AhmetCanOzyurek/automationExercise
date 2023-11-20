@@ -1,4 +1,4 @@
-package AE;
+package AE.FirstToTenth;
 
 import com.github.javafaker.Faker;
 

@@ -4,8 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import utilities.TestBase;
-import static utilities.Locators.*;
+
 import java.util.List;
+
+import static utilities.Locators.*;
 public class _12_TestCase extends TestBase {
     @Test
     public void AddProductsInCart(){
@@ -15,7 +17,7 @@ public class _12_TestCase extends TestBase {
         // 3. Verify that home page is visible successfully
         verifyMainPage(lmainPage);
         // 4. Click 'Products' button
-        click(lProductButton);
+        click(lProducts);
         // 5. Hover over first product and click 'Add to cart'
         WebElement element = driver.findElement(lAddToCartButton);
         scrollIntoWiev(element);

@@ -4,32 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="viewCategoryProduct/17.testCase">
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="RegisterWhileCheckout/14.testCase">
       <change afterPath="$PROJECT_DIR$/.idea/mavenProjectSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utility/Browsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utility/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AE/_18_TestCase.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/day03/C01_hepsiBuradaTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_10_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_10_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_14_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_14_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_15_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_15_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_16_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_16_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_17_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_17_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_1_Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_1_Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_2_CaseAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_2_CaseAX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_3_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_3_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_4_TestCAse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_4_TestCAse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_5_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_5_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_6_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_6_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_7_testCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_7_testCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_8_TestCasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_8_TestCasse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_9_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_9_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Soru1/_2_CaseAX.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/xmlDosyaları/AE1-2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/xmlDosyaları/AE1-2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/xmlDosyaları/AE3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/xmlDosyaları/AE3.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -483,7 +460,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700389344831</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="RegisterWhileCheckout/14.testCase">
+      <option name="closed" value="true" />
+      <created>1700482804677</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1700482804677</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -517,7 +502,8 @@
     <MESSAGE value="placeOrderRegisterBeforeCheckout/15.testCase" />
     <MESSAGE value="removeProductFromCart/16.testCase" />
     <MESSAGE value="viewCategoryProduct/17.testCase" />
-    <option name="LAST_COMMIT_MESSAGE" value="viewCategoryProduct/17.testCase" />
+    <MESSAGE value="RegisterWhileCheckout/14.testCase" />
+    <option name="LAST_COMMIT_MESSAGE" value="RegisterWhileCheckout/14.testCase" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

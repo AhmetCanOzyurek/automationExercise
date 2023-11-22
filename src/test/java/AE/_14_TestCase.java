@@ -14,7 +14,7 @@ public class _14_TestCase extends TestBase {
 //        3. Verify that home page is visible successfully
         verifyVisibility(lmainPage);
 //        4. Add products to cart
-        addProductsToCard(3);
+        addProductsToCart(3);
 //        5. Click 'Cart' button
         click(lCart);
 //        6. Verify that cart page is displayed

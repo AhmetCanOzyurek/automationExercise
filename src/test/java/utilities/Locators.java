@@ -6,22 +6,22 @@ public interface Locators {
     By lmainPage = By.xpath("//div[@class='logo pull-left']");
     //Main Page
         //SideBar
-        By lCategoryLeftSide = By.xpath("//h2[text()='Category']");
-            By lWomenCategoru = By.xpath("(//span[@class='badge pull-right'])[1]");
-                //Women Category
-                    By lWomenDress = By.xpath("(//a[contains(text(),'Dress')])[1]");
-                        //Women dress page
-                            By lWomenDressText = By.xpath("//*[contains(text(),'Women > Dress')]");
-        By lMenCategoru = By.xpath("(//span[@class='badge pull-right'])[2]");
-            //Men category
-                By lMenTshirt = By.xpath("//a[contains(text(),'Tshirts')]");
-                    //Men TshirtPage
-                        By lMenTshirtPageTxt = By.xpath("//*[contains(text(),'Men > Tshirts')]");
-        By lBrands = By.xpath("//*[text()='Brands']");
-            By lPoloBrand = By.cssSelector("ul li a[href = '/brand_products/Polo']");
-                By lPoloBrandPageTxt = By.xpath("(//*[text()='Polo'])[1]");
-            By lHMbrand = By.cssSelector("ul li a[href = '/brand_products/H&M']");
-                By lHmBrandPageTxt = By.xpath("//*[text()='Brand - H&M Products']");
+            By lCategoryLeftSide = By.xpath("//h2[text()='Category']");
+                By lWomenCategoru = By.xpath("(//span[@class='badge pull-right'])[1]");
+                    //Women Category
+                        By lWomenDress = By.xpath("(//a[contains(text(),'Dress')])[1]");
+                            //Women dress page
+                                By lWomenDressText = By.xpath("//*[contains(text(),'Women > Dress')]");
+            By lMenCategoru = By.xpath("(//span[@class='badge pull-right'])[2]");
+                //Men category
+                    By lMenTshirt = By.xpath("//a[contains(text(),'Tshirts')]");
+                        //Men TshirtPage
+                            By lMenTshirtPageTxt = By.xpath("//*[contains(text(),'Men > Tshirts')]");
+            By lBrands = By.xpath("//*[text()='Brands']");
+                By lPoloBrand = By.cssSelector("ul li a[href = '/brand_products/Polo']");
+                    By lPoloBrandPageTxt = By.xpath("(//*[text()='Polo'])[1]");
+                By lHMbrand = By.cssSelector("ul li a[href = '/brand_products/H&M']");
+                    By lHmBrandPageTxt = By.xpath("//*[text()='Brand - H&M Products']");
         //TopBar
             By lCart = By.xpath("//a[text()=' Cart']");
                 // cart page
@@ -29,10 +29,18 @@ public interface Locators {
                      //Checkout
                           By lRegisterLoginChckout = By.xpath("//*[text()='Register / Login']");
                           By lRemoveProductFrmCart = By.xpath("(//i[@class='fa fa-times'])[1]");
+                          By lProductsInCart = By.cssSelector(".cart_product");
             By lDeleteAccount = By.xpath("//*[text()=' Delete Account']");
             //accountDeleted
                 By lAccountDeletedTxt = By.xpath("//*[text()='Account Deleted!']");
-            By lProducts = By.xpath("//*[text()=' Products']");
+            By lProductsTopBar = By.xpath("//*[text()=' Products']");
+                //product page
+                By lProducts = By.xpath("//div[@class='features_items']//div[@class='col-sm-4']");
+                By lSearchProductBox =By.cssSelector("#search_product");
+                By lSearchButton = By.cssSelector("#submit_search");
+                By lSearchedProductsText = By.xpath("//*[text()='Searched Products']");
+                By lSearchedProducts = By.cssSelector(".features_items .col-sm-4");
+
             By lSignupLogin = By.xpath("//*[text()=' Signup / Login']");
     By lAddToCartButton = By.xpath("(//a[@data-product-id='1'])[1]");
     By lAddToCartButton2 = By.xpath("(//a[@data-product-id='2'])[1]");

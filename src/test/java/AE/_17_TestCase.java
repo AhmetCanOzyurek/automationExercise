@@ -13,7 +13,7 @@ public class _17_TestCase extends TestBase {
        //3. Verify that home page is visible successfully
         verifyMainPage(lmainPage);
        //4. Add products to cart
-        addProductsToCard(3);
+        addProductsToCart(7);
        //5. Click 'Cart' button
         click(lCart);
        //6. Verify that cart page is displayed

@@ -23,7 +23,7 @@ click(By.linkText("Continue"));
        //7. Verify ' Logged in as username' at top
 verifyVisibility(By.partialLinkText("Logged"));
        //8. Add products to cart
-addProductsToCard(3);
+addProductsToCart(3);
        //9. Click 'Cart' button
         click(lCart);
        //10. Verify that cart page is displayed

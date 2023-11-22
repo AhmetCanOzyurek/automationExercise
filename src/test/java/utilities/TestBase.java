@@ -1,9 +1,7 @@
 package utilities;
 
 import com.github.javafaker.Faker;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -11,11 +9,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.asserts.SoftAssert;
+import utility.Driver;
 
 import java.time.Duration;
+import java.util.List;
 
 import static utilities.Locators.*;
-import static utilities.Locators.lCountryDDM;
 
 public class TestBase {
     public static WebDriver driver;
@@ -28,8 +27,7 @@ public class TestBase {
     protected static Select select;
 @BeforeTest
     public  void  setUp(){
-        driver = new ChromeDriver();
-        WebDriverManager.chromedriver();
+        driver = Driver.getDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         softAssert = new SoftAssert();
@@ -123,14 +121,17 @@ protected void newUserSignUp(){
             .sendKeys(faker.phoneNumber().cellPhone()+ Keys.ENTER).perform();
 
 }
-protected void addProductsToCard(int numberOfProduct){
-    String dynmaicXpath;
-    for (int i = 1; i <=numberOfProduct ; i++) {
-        dynmaicXpath = "(//a[@data-product-id='"+i+"'])[1]";
-        element = driver.findElement(By.xpath(dynmaicXpath));
-        click(element);
-        click(lContinueShopping);
+protected void addProductsToCart(int numberOfProduct){
+
+    actions.scrollByAmount(0,300).build().perform();
+
+    for (int i = 1; i <numberOfProduct*2 ; i+=2) {
+      WebElement element1 = driver.findElement(By.xpath("(//a[@class='btn btn-default add-to-cart'])["+i+"]"));
+      jse.executeScript("arguments[0].scrollIntoView();",element1);
+      element1.click();
+      click(lContinueShopping);
     }
+
 }
 protected void verifyAdressDetails(){
 
@@ -157,6 +158,26 @@ protected  void bekle(int saniye){
         throw new RuntimeException(e);
     }
 }
+protected void verifyAllProducts(By locator){
+
+    List<WebElement> allProducts = driver.findElements(locator);
+        wait.until(ExpectedConditions.visibilityOfAllElements(allProducts));
+
+}
+protected void searchAProductOnProductPage(String productName){
+WebElement element = driver.findElement(lSearchProductBox);
+WebElement element1 = driver.findElement(lSearchButton);
+    new Actions(driver).click(element)
+            .sendKeys(productName)
+            .click(element1)
+            .build()
+            .perform();
+
+}
+protected void verifyAmountOfAddedProductsOnCart(int numberOfProductToAssert){
+    wait.until(ExpectedConditions.numberOfElementsToBe(lProductsInCart,numberOfProductToAssert));
+}
+
     @AfterTest
     public  void tearDown() {
         try {

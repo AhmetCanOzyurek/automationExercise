@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="RegisterWhileCheckout/14.testCase">
-      <change afterPath="$PROJECT_DIR$/.idea/mavenProjectSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day03/C01_hepsiBuradaTestCase.java" afterDir="false" />
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="View&amp;CartBrandProducts/19.TestCase">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AE/_19_TestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AE/_20_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_14_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_14_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_16_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_16_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_17_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_17_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +86,7 @@
       <recent name="AE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG._14_TestCase.RegisterWhileCheckout">
+  <component name="RunManager" selected="TestNG._20_TestCase.searchProductsAndVerifyCartAfterLogin">
     <configuration name="_11_TestCase" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AE._11_TestCase" />
       <module name="automationExercise" />
@@ -168,78 +174,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_15_TestCase.placeOrder" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE._15_TestCase" />
-      <option name="METHOD_NAME" value="placeOrder" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_15_TestCase.placeOrder" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE._15_TestCase" />
-      <option name="METHOD_NAME" value="placeOrder" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_16_TestCase.placeOrderCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE._16_TestCase" />
-      <option name="METHOD_NAME" value="placeOrderCheckout" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_17_TestCase.removeFromCart" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE._17_TestCase" />
-      <option name="METHOD_NAME" value="removeFromCart" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_18_TestCase.ViewCategoryProducts" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -251,6 +185,59 @@
       <option name="PACKAGE_NAME" value="AE" />
       <option name="MAIN_CLASS_NAME" value="AE._18_TestCase" />
       <option name="METHOD_NAME" value="ViewCategoryProducts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_19_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._19_TestCase" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_19_TestCase.viewAndCartBrandProducts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._19_TestCase" />
+      <option name="METHOD_NAME" value="viewAndCartBrandProducts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_20_TestCase.searchProductsAndVerifyCartAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._20_TestCase" />
+      <option name="METHOD_NAME" value="searchProductsAndVerifyCartAfterLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -280,19 +267,19 @@
       <item itemvalue="Application._11_TestCase" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
+      <item itemvalue="TestNG._20_TestCase.searchProductsAndVerifyCartAfterLogin" />
+      <item itemvalue="TestNG._19_TestCase" />
+      <item itemvalue="TestNG._19_TestCase.viewAndCartBrandProducts" />
       <item itemvalue="TestNG._14_TestCase.RegisterWhileCheckout" />
-      <item itemvalue="TestNG._15_TestCase.placeOrder" />
-      <item itemvalue="TestNG._16_TestCase.placeOrderCheckout" />
-      <item itemvalue="TestNG._17_TestCase.removeFromCart" />
       <item itemvalue="TestNG._18_TestCase.ViewCategoryProducts" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG._20_TestCase.searchProductsAndVerifyCartAfterLogin" />
         <item itemvalue="TestNG._14_TestCase.RegisterWhileCheckout" />
+        <item itemvalue="TestNG._19_TestCase.viewAndCartBrandProducts" />
+        <item itemvalue="TestNG._19_TestCase" />
         <item itemvalue="TestNG._18_TestCase.ViewCategoryProducts" />
-        <item itemvalue="TestNG._16_TestCase.placeOrderCheckout" />
-        <item itemvalue="TestNG._17_TestCase.removeFromCart" />
-        <item itemvalue="TestNG._15_TestCase.placeOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -468,7 +455,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700482804677</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="initial">
+      <option name="closed" value="true" />
+      <created>1700549736177</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1700549736177</updated>
+    </task>
+    <task id="LOCAL-00022" summary="View&amp;CartBrandProducts/19.TestCase">
+      <option name="closed" value="true" />
+      <created>1700554693705</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1700554693705</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -503,7 +506,9 @@
     <MESSAGE value="removeProductFromCart/16.testCase" />
     <MESSAGE value="viewCategoryProduct/17.testCase" />
     <MESSAGE value="RegisterWhileCheckout/14.testCase" />
-    <option name="LAST_COMMIT_MESSAGE" value="RegisterWhileCheckout/14.testCase" />
+    <MESSAGE value="initial" />
+    <MESSAGE value="View&amp;CartBrandProducts/19.TestCase" />
+    <option name="LAST_COMMIT_MESSAGE" value="View&amp;CartBrandProducts/19.TestCase" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

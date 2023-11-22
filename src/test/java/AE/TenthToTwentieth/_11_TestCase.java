@@ -1,4 +1,4 @@
-package AE;
+package AE.TenthToTwentieth;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

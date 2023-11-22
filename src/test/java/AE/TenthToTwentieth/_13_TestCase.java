@@ -1,4 +1,4 @@
-package AE;
+package AE.TenthToTwentieth;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

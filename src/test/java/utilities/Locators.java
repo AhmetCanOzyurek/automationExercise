@@ -40,6 +40,8 @@ public interface Locators {
                 By lSearchButton = By.cssSelector("#submit_search");
                 By lSearchedProductsText = By.xpath("//*[text()='Searched Products']");
                 By lSearchedProducts = By.cssSelector(".features_items .col-sm-4");
+                By lAllProductsTxt = By.xpath("//*[text()='All Products']");
+
 
             By lSignupLogin = By.xpath("//*[text()=' Signup / Login']");
     By lAddToCartButton = By.xpath("(//a[@data-product-id='1'])[1]");
@@ -49,6 +51,15 @@ public interface Locators {
     By lShoppingCartTxt = By.xpath("//*[text()='Shopping Cart']");
     By lWievCart = By.xpath("//*[text()='View Cart']");
     By lviewProduct = By.xpath("(//*[text()='View Product'])[1]");
+        //viewProductPage
+        By lWriteYourReviewtxt = By.xpath("//a[text()='Write Your Review']");
+            //reviewArea
+            By lReviewNameBox= By.cssSelector("#review-form #name");
+            By lReviewEmailBox= By.cssSelector("#review-form #email");
+            By lReviewBox= By.cssSelector("#review-form #review");
+            By lReviewSubmit = By.cssSelector("#button-review");
+            By lReviewSuccessTxt = By.cssSelector("#review-section");
+
     By lProductDetails = By.xpath("//div[@class = 'product-details']");
     By lQuantityBox = By.cssSelector("#quantity");
     By lIncreaseQuantity = By.cssSelector("#product_id");

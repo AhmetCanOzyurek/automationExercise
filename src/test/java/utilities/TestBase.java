@@ -52,7 +52,11 @@ public class TestBase {
     }
     public void scrollIntoWiev(WebElement element){
     jse.executeScript("arguments[0].scrollIntoView(true);", element);
+    }public void scrollIntoWiev(By locator){
+    WebElement element = driver.findElement(locator);
+    jse.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
     protected void verifyVisibility(By locator){
     wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
@@ -177,7 +181,25 @@ WebElement element1 = driver.findElement(lSearchButton);
 protected void verifyAmountOfAddedProductsOnCart(int numberOfProductToAssert){
     wait.until(ExpectedConditions.numberOfElementsToBe(lProductsInCart,numberOfProductToAssert));
 }
+protected void writeAReview(String name,
+                            String email, String review){
+    verifyVisibility(lWriteYourReviewtxt);
+    WebElement reviewNameBox = driver.findElement(lReviewNameBox);
+    WebElement reviewEmailBox = driver.findElement(lReviewEmailBox);
+    WebElement reviewBox = driver.findElement(lReviewBox);
+    WebElement reviewSubmit = driver.findElement(lReviewSubmit);
+    scrollIntoWiev(reviewBox);
 
+    actions.sendKeys(reviewNameBox,name)
+            .sendKeys(reviewEmailBox,email)
+            .sendKeys(reviewBox,review)
+            .scrollToElement(reviewSubmit)
+            .click(reviewSubmit)
+            .build()
+            .perform();
+    verifyVisibility(lReviewSuccessTxt);
+
+}
     @AfterTest
     public  void tearDown() {
         try {

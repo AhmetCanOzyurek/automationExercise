@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Arrangments">
-      <change afterPath="$PROJECT_DIR$/src/test/java/AE/_21_TestCase.java" afterDir="false" />
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Add review on product/ 21.TestCase">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AE/_22_TestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
@@ -82,7 +82,7 @@
       <recent name="AE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG._21_TestCase.addReviewOnProduct">
+  <component name="RunManager" selected="TestNG._22_TestCase.RecommendedItems">
     <configuration name="_11_TestCase" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._11_TestCase" />
       <module name="automationExercise" />
@@ -170,23 +170,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_19_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AE.TenthToTwentieth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._19_TestCase" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_19_TestCase.viewAndCartBrandProducts" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -241,6 +224,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_22_TestCase.RecommendedItems" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._22_TestCase" />
+      <option name="METHOD_NAME" value="RecommendedItems" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_9_TestCase.searchProduct" type="TestNG" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -263,19 +264,19 @@
       <item itemvalue="Application._11_TestCase" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
+      <item itemvalue="TestNG._22_TestCase.RecommendedItems" />
       <item itemvalue="TestNG._21_TestCase.addReviewOnProduct" />
       <item itemvalue="TestNG._20_TestCase.searchProductsAndVerifyCartAfterLogin" />
-      <item itemvalue="TestNG._19_TestCase" />
       <item itemvalue="TestNG._19_TestCase.viewAndCartBrandProducts" />
       <item itemvalue="TestNG._14_TestCase.RegisterWhileCheckout" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG._22_TestCase.RecommendedItems" />
         <item itemvalue="TestNG._21_TestCase.addReviewOnProduct" />
         <item itemvalue="TestNG._20_TestCase.searchProductsAndVerifyCartAfterLogin" />
         <item itemvalue="TestNG._14_TestCase.RegisterWhileCheckout" />
         <item itemvalue="TestNG._19_TestCase.viewAndCartBrandProducts" />
-        <item itemvalue="TestNG._19_TestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -483,7 +484,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700684150356</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Add review on product/ 21.TestCase">
+      <option name="closed" value="true" />
+      <created>1700770559062</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1700770559062</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,7 +531,8 @@
     <MESSAGE value="View&amp;CartBrandProducts/19.TestCase" />
     <MESSAGE value="SearchProductsAndVerifyCartAfterLogin/20.TestCase" />
     <MESSAGE value="Arrangments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrangments" />
+    <MESSAGE value="Add review on product/ 21.TestCase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add review on product/ 21.TestCase" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -12,6 +12,10 @@ public interface Locators {
                         By lWomenDress = By.xpath("(//a[contains(text(),'Dress')])[1]");
                             //Women dress page
                                 By lWomenDressText = By.xpath("//*[contains(text(),'Women > Dress')]");
+
+            By lRecommendItemsTxt = By.xpath("//*[text()='recommended items']");
+                //RecommendedItems
+                By lRecommendedAddToCart = By.xpath("//div[@id='recommended-item-carousel']//a[@data-product-id='1']");
             By lMenCategoru = By.xpath("(//span[@class='badge pull-right'])[2]");
                 //Men category
                     By lMenTshirt = By.xpath("//a[contains(text(),'Tshirts')]");
@@ -85,6 +89,7 @@ By lPlaceOrder = By.xpath("//*[text()='Place Order']");
 //Payment
     By lNameOnCard = By.xpath("//*[@name='name_on_card']");
 
-
+//Products
+    By lBlueTop = By.xpath("//*[text()='Blue Top']");
 
 }

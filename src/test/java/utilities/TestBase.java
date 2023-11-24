@@ -200,6 +200,12 @@ protected void writeAReview(String name,
     verifyVisibility(lReviewSuccessTxt);
 
 }
+protected void assertItemNames(String expectedItemName, By actualElementLocator){
+    String actualItemName = driver.findElement(actualElementLocator).getText();
+    softAssert.assertEquals(actualItemName, expectedItemName);
+
+    softAssert.assertAll();
+}
     @AfterTest
     public  void tearDown() {
         try {

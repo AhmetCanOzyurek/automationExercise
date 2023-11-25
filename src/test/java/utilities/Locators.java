@@ -3,6 +3,7 @@ package utilities;
 import org.openqa.selenium.By;
 
 public interface Locators {
+    String url = "https://automationexercise.com/";
     By lmainPage = By.xpath("//div[@class='logo pull-left']");
     //Main Page
         //SideBar
@@ -34,6 +35,7 @@ public interface Locators {
                           By lRegisterLoginChckout = By.xpath("//*[text()='Register / Login']");
                           By lRemoveProductFrmCart = By.xpath("(//i[@class='fa fa-times'])[1]");
                           By lProductsInCart = By.cssSelector(".cart_product");
+                          By lBillingAdressDetailBox =By.cssSelector("#address_invoice");
             By lDeleteAccount = By.xpath("//*[text()=' Delete Account']");
             //accountDeleted
                 By lAccountDeletedTxt = By.xpath("//*[text()='Account Deleted!']");
@@ -79,7 +81,9 @@ By lCheckBox1 = By.xpath("(//input[@type='checkbox'])[1]");
 By lCheckBox2 = By.xpath("(//input[@type='checkbox'])[2]");
 By lCountryDDM = By.cssSelector("#country");
 By lAccountCreatedText = By.xpath("//*[text()='Account Created!']");
-By lLoggedAsUsernameTxt = By.xpath("//*[text()='Account Created!']");
+By lLoggedAsUsernameTxt = By.xpath("//*[text()=' Logged in as ']");
+    By lContinueAfterAccountCreated = By.xpath("//*[text()='Continue']");
+
 // Checkout
     By lDescription = By.cssSelector(".form-control");
 By lPlaceOrder = By.xpath("//*[text()='Place Order']");

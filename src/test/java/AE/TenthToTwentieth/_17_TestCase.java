@@ -11,7 +11,7 @@ public class _17_TestCase extends TestBase {
        //2. Navigate to url 'http://automationexercise.com'
         navigateToSite();
        //3. Verify that home page is visible successfully
-        verifyMainPage(lmainPage);
+        verifyMainPage();
        //4. Add products to cart
         addProductsToCart(7);
        //5. Click 'Cart' button

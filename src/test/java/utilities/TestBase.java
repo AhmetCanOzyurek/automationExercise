@@ -22,25 +22,30 @@ public class TestBase {
     public static SoftAssert softAssert;
     protected static Actions actions;
     public static JavascriptExecutor jse;
-    protected static Faker faker;
+    protected static Faker faker = new Faker();
     protected static WebElement element;
     protected static Select select;
+    protected static  String fakerLocation =  faker.rickAndMorty().location();
+    protected static String fakerLocation2 = faker.rickAndMorty().location();
 @BeforeTest
     public  void  setUp(){
         driver = Driver.getDriver();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         softAssert = new SoftAssert();
         wait  = new WebDriverWait(driver, Duration.ofSeconds(10));
         jse = (JavascriptExecutor) driver;
         actions = new Actions(driver);
-        faker = new Faker();
+
+    }
+    {
+
     }
     public void navigateToSite() {
-        driver.get("http://automationexercise.com");
+        driver.get(url);
     }
-    public void verifyMainPage(By locator){
-    WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    public void verifyMainPage(){
+    WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(lmainPage));
     }
 
     public void click(By locator){
@@ -108,10 +113,11 @@ protected void newUserSignUp(){
     actions.click(eCheckBox1).click(eCheckbox2)
             .sendKeys(Keys.TAB)
             .sendKeys(faker.name().firstName()+ Keys.TAB )
-            .sendKeys(faker.name().lastName() + Keys.TAB)
-            .sendKeys("muz" + Keys.TAB)
-            .sendKeys(faker.rickAndMorty().location() + Keys.TAB)
-            .sendKeys(faker.rickAndMorty().location() + Keys.TAB)
+            .sendKeys(faker.name().lastName() + Keys.TAB).perform();
+
+             actions.sendKeys("muz" + Keys.TAB)
+            .sendKeys(fakerLocation + Keys.TAB)
+            .sendKeys(fakerLocation2+ Keys.TAB)
             .perform();
 
     WebElement countryDDM = driver.findElement(lCountryDDM);
@@ -141,9 +147,12 @@ protected void verifyAdressDetails(){
 
     WebElement adressBox = driver.findElement(By.cssSelector("#address_delivery"));
     String actualAdressStr = adressBox.getText();
-    String expectedAdress = "Canada";
+    WebElement billingAdressBox = driver.findElement(lBillingAdressDetailBox);
+    String actualBillingAdressStr = billingAdressBox.getText();
 
-    softAssert.assertTrue(actualAdressStr.contains(expectedAdress));
+
+    softAssert.assertTrue(actualAdressStr.contains(fakerLocation));
+    softAssert.assertTrue(actualBillingAdressStr.contains(fakerLocation));
 }
 protected void fillCreditCardCredentials(){
     WebElement eNameOnCardBox = driver.findElement(lNameOnCard);

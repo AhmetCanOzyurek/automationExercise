@@ -12,7 +12,7 @@ public class _16_TestCase extends TestBase {
        //2. Navigate to url 'http://automationexercise.com'
         navigateToSite();
        //3. Verify that home page is visible successfully
-        verifyMainPage(lmainPage);
+        verifyMainPage();
        //4. Click 'Signup / Login' button
         click(lSignupLogin);
        //5. Fill all details in Signup and create account

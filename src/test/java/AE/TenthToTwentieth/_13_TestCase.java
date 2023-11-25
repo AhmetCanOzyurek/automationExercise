@@ -13,7 +13,7 @@ public class _13_TestCase extends TestBase {
        //2. Navigate to url 'http://automationexercise.com'
         navigateToSite();
        //3. Verify that home page is visible successfully
-        verifyMainPage(lmainPage);
+        verifyMainPage();
         //4. Click 'View Product' for any product on home page
         click(lviewProduct);
        //5. Verify product detail is opened

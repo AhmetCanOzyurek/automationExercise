@@ -17,7 +17,7 @@ public class _15_TestCase extends TestBase {
    // 2. Navigate to url 'http://automationexercise.com'
     navigateToSite();
    // 3. Verify that home page is visible successfully
-    verifyMainPage(lmainPage);
+    verifyMainPage();
    // 4. Add products to cart
     String dynmaicXpath;
     for (int i = 1; i <=4 ; i++) {

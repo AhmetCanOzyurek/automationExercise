@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Add to cart from Recommended items/ 22.TestCase">
-      <change afterPath="$PROJECT_DIR$/src/test/java/AE/_23_TestCase.java" afterDir="false" />
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Verify address details in checkout page/ 23.TestCase">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AE/_24_TestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_12_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_12_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_13_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_13_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_14_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_14_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_15_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_15_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_16_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_16_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_17_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_17_TestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
     </list>
@@ -89,7 +83,7 @@
       <recent name="AE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG._23_TestCase.verifyAdressDetailsTest">
+  <component name="RunManager" selected="TestNG._24_TestCase">
     <configuration name="_11_TestCase" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._11_TestCase" />
       <module name="automationExercise" />
@@ -159,42 +153,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_20_TestCase.searchProductsAndVerifyCartAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AE.TenthToTwentieth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._20_TestCase" />
-      <option name="METHOD_NAME" value="searchProductsAndVerifyCartAfterLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_21_TestCase.addReviewOnProduct" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE._21_TestCase" />
-      <option name="METHOD_NAME" value="addReviewOnProduct" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_22_TestCase.RecommendedItems" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -249,6 +207,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_24_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._24_TestCase" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_24_TestCase.payments" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._24_TestCase" />
+      <option name="METHOD_NAME" value="payments" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_9_TestCase.searchProduct" type="TestNG" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -271,19 +264,19 @@
       <item itemvalue="Application._11_TestCase" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
+      <item itemvalue="TestNG._24_TestCase" />
+      <item itemvalue="TestNG._24_TestCase.payments" />
       <item itemvalue="TestNG._23_TestCase.verifyAdressDetailsTest" />
       <item itemvalue="TestNG._23_TestCase.verifyAdressDetails" />
       <item itemvalue="TestNG._22_TestCase.RecommendedItems" />
-      <item itemvalue="TestNG._21_TestCase.addReviewOnProduct" />
-      <item itemvalue="TestNG._20_TestCase.searchProductsAndVerifyCartAfterLogin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG._24_TestCase" />
+        <item itemvalue="TestNG._24_TestCase.payments" />
         <item itemvalue="TestNG._23_TestCase.verifyAdressDetailsTest" />
         <item itemvalue="TestNG._23_TestCase.verifyAdressDetails" />
         <item itemvalue="TestNG._22_TestCase.RecommendedItems" />
-        <item itemvalue="TestNG._21_TestCase.addReviewOnProduct" />
-        <item itemvalue="TestNG._20_TestCase.searchProductsAndVerifyCartAfterLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -507,7 +500,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700828529326</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Verify address details in checkout page/ 23.TestCase">
+      <option name="closed" value="true" />
+      <created>1700938105352</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1700938105352</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AutomationExerciseTestCase2" />
     <MESSAGE value="AutomationExerciseTestCase3/IncorrectUserCredentialTest" />
     <MESSAGE value="AutomationExerciseTestCase4/LogoutUserTest" />
     <MESSAGE value="AutomationExerciseTestCase5/ExistingUserCredentialTest" />
@@ -547,7 +547,8 @@
     <MESSAGE value="Arrangments" />
     <MESSAGE value="Add review on product/ 21.TestCase" />
     <MESSAGE value="Add to cart from Recommended items/ 22.TestCase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add to cart from Recommended items/ 22.TestCase" />
+    <MESSAGE value="Verify address details in checkout page/ 23.TestCase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Verify address details in checkout page/ 23.TestCase" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

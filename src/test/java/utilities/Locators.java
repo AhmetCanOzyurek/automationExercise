@@ -36,6 +36,7 @@ public interface Locators {
                           By lRemoveProductFrmCart = By.xpath("(//i[@class='fa fa-times'])[1]");
                           By lProductsInCart = By.cssSelector(".cart_product");
                           By lBillingAdressDetailBox =By.cssSelector("#address_invoice");
+                          By lDownloadInvoice = By.xpath("//*[.='Download Invoice']");
             By lDeleteAccount = By.xpath("//*[text()=' Delete Account']");
             //accountDeleted
                 By lAccountDeletedTxt = By.xpath("//*[text()='Account Deleted!']");
@@ -83,7 +84,6 @@ By lCountryDDM = By.cssSelector("#country");
 By lAccountCreatedText = By.xpath("//*[text()='Account Created!']");
 By lLoggedAsUsernameTxt = By.xpath("//*[text()=' Logged in as ']");
     By lContinueAfterAccountCreated = By.xpath("//*[text()='Continue']");
-
 // Checkout
     By lDescription = By.cssSelector(".form-control");
 By lPlaceOrder = By.xpath("//*[text()='Place Order']");
@@ -93,6 +93,7 @@ By lPlaceOrder = By.xpath("//*[text()='Place Order']");
 //Payment
     By lNameOnCard = By.xpath("//*[@name='name_on_card']");
 
+    By lOrderPlacedTxt = By.xpath("//*[.='Order Placed!']");
 //Products
     By lBlueTop = By.xpath("//*[text()='Blue Top']");
 

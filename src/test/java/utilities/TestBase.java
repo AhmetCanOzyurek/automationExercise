@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.asserts.SoftAssert;
 import utility.Driver;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.List;
 
@@ -76,7 +78,7 @@ public class TestBase {
 }
 protected void verifyYourOrderHasBeenPlaced(){
     driver.navigate().back();
-    verifyVisibility(By.cssSelector("div[id = 'success_message']"));
+    verifyVisibility(lOrderPlacedTxt);
     click(By.cssSelector("#submit"));
     bekle(3);
     click(By.xpath("//*[text()='Continue']"));
@@ -209,14 +211,19 @@ protected void writeAReview(String name,
     verifyVisibility(lReviewSuccessTxt);
 
 }
+protected void verifyFileDownloaded(){
+String dynamicFilePath = System.getProperty("user.home")+"/Downloads/invoice.txt";
+softAssert.assertTrue(Files.exists(Paths.get(dynamicFilePath)));
+}
 protected void assertItemNames(String expectedItemName, By actualElementLocator){
     String actualItemName = driver.findElement(actualElementLocator).getText();
     softAssert.assertEquals(actualItemName, expectedItemName);
 
-    softAssert.assertAll();
+
 }
     @AfterTest
     public  void tearDown() {
+    softAssert.assertAll();
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

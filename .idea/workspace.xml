@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Verify address details in checkout page/ 23.TestCase">
-      <change afterPath="$PROJECT_DIR$/src/test/java/AE/_24_TestCase.java" afterDir="false" />
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Download Invoice after purchase order/ 24.TestCase">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AE/_25_TestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
@@ -83,7 +83,7 @@
       <recent name="AE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG._24_TestCase">
+  <component name="RunManager" selected="TestNG._25_TestCase">
     <configuration name="_11_TestCase" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._11_TestCase" />
       <module name="automationExercise" />
@@ -147,24 +147,6 @@
         <value defaultName="moduleWithDependencies" />
       </option>
       <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_22_TestCase.RecommendedItems" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE._22_TestCase" />
-      <option name="METHOD_NAME" value="RecommendedItems" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -242,6 +224,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_25_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE" />
+      <option name="MAIN_CLASS_NAME" value="AE._25_TestCase" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_9_TestCase.searchProduct" type="TestNG" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -264,19 +263,19 @@
       <item itemvalue="Application._11_TestCase" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
+      <item itemvalue="TestNG._25_TestCase" />
       <item itemvalue="TestNG._24_TestCase" />
       <item itemvalue="TestNG._24_TestCase.payments" />
       <item itemvalue="TestNG._23_TestCase.verifyAdressDetailsTest" />
       <item itemvalue="TestNG._23_TestCase.verifyAdressDetails" />
-      <item itemvalue="TestNG._22_TestCase.RecommendedItems" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG._25_TestCase" />
         <item itemvalue="TestNG._24_TestCase" />
         <item itemvalue="TestNG._24_TestCase.payments" />
         <item itemvalue="TestNG._23_TestCase.verifyAdressDetailsTest" />
         <item itemvalue="TestNG._23_TestCase.verifyAdressDetails" />
-        <item itemvalue="TestNG._22_TestCase.RecommendedItems" />
       </list>
     </recent_temporary>
   </component>
@@ -508,7 +507,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700938105352</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Download Invoice after purchase order/ 24.TestCase">
+      <option name="closed" value="true" />
+      <created>1701004541733</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1701004541733</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +530,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AutomationExerciseTestCase3/IncorrectUserCredentialTest" />
     <MESSAGE value="AutomationExerciseTestCase4/LogoutUserTest" />
     <MESSAGE value="AutomationExerciseTestCase5/ExistingUserCredentialTest" />
     <MESSAGE value="AutomationExerciseTestCase6/ContactUsFromTest" />
@@ -548,7 +554,8 @@
     <MESSAGE value="Add review on product/ 21.TestCase" />
     <MESSAGE value="Add to cart from Recommended items/ 22.TestCase" />
     <MESSAGE value="Verify address details in checkout page/ 23.TestCase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Verify address details in checkout page/ 23.TestCase" />
+    <MESSAGE value="Download Invoice after purchase order/ 24.TestCase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Download Invoice after purchase order/ 24.TestCase" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -221,6 +221,12 @@ protected void assertItemNames(String expectedItemName, By actualElementLocator)
 
 
 }
+protected WebElement getShadowRoots(By shadowRootLocator, By elementLocator){
+   WebElement eShadowRoot = wait.until(ExpectedConditions.presenceOfElementLocated(shadowRootLocator));
+return eShadowRoot.getShadowRoot().findElement(elementLocator);
+
+
+}
     @AfterTest
     public  void tearDown() {
     softAssert.assertAll();

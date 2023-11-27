@@ -13,6 +13,11 @@ public interface Locators {
                         By lWomenDress = By.xpath("(//a[contains(text(),'Dress')])[1]");
                             //Women dress page
                                 By lWomenDressText = By.xpath("//*[contains(text(),'Women > Dress')]");
+            By lSubsTextDownPage = By.xpath("//*[text()='Subscription']");
+            By lUpwardArrow = By.cssSelector("#scrollUp");
+            By lFullFledgedtxt = By.xpath("(//*[contains(text(),'Full-Fledged')])[1]");
+            By lAddsDownButton = By.cssSelector("#dropShadowTop");
+            By lShadowRootAdds = By.xpath("//div[@class='grippy-host']");
 
             By lRecommendItemsTxt = By.xpath("//*[text()='recommended items']");
                 //RecommendedItems

@@ -1,5 +1,6 @@
 package AE;
 
+import AE.Pages.HomePage.HomePage;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -8,6 +9,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utilities.TestBase;
+import utility.Driver;
+
 import static utilities.Locators.*;
 public class _26_TestCase extends TestBase {
 ExtentSparkReporter html;
@@ -18,7 +21,7 @@ ExtentTest test3;
 
     @BeforeTest
     public void extentTester(){
-        html = new ExtentSparkReporter(System.getProperty("user.dir")+"test-output/ExtentReport.html");
+        html = new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport.html");
         extentReport =  new ExtentReports();
         extentReport.attachReporter(html);
         test1 = extentReport.createTest("Test 1","Test tanimi-1");
@@ -31,15 +34,18 @@ ExtentTest test3;
         extentReport.setSystemInfo("OS",System.getProperty("os.name"));
         extentReport.setSystemInfo("Project Dir",System.getProperty("user.dir"));
         extentReport.flush();
+        Driver.getDriver().quit();
     }
     @Test
     public void first() {
         test1.info("Sayfa acilis testi basladi");
-//    2. Navigate to url 'http://automationexercise.com'
-        navigateToSite();
-//            3. Verify that home page is visible successfully
+        HomePage homePage = new HomePage();
+        // 1. Launch browser
+        // 2. Navigate to url 'http://automationexercise.com'
+        homePage.navigateToSite();
+        // 3. Verify that home page is visible successfully
         try {
-            verifyMainPage();
+            homePage.verifyMainPage();
             test1.pass("Test 1 Passed");
         } catch (AssertionError e) {
             test1.fail("Test1 failed, "+ e.getMessage());

@@ -1,14 +1,18 @@
 package AE.TenthToTwentieth;
 
+import AE.Pages.HomePage.HomePage;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 import static utilities.Locators.*;
 public class _18_TestCase extends TestBase {
     @Test
     public void ViewCategoryProducts(){
-//        1. Launch browser
-//        2. Navigate to url 'http://automationexercise.com'
-        navigateToSite();
+        HomePage homePage = new HomePage();
+        // 1. Launch browser
+        // 2. Navigate to url 'http://automationexercise.com'
+        homePage.navigateToSite();
+        // 3. Verify that home page is visible successfully
+        homePage.verifyMainPage();
 //        3. Verify that categories are visible on left side bar
         verifyVisibility(lCategoryLeftSide);
 //        4. Click on 'Women' category

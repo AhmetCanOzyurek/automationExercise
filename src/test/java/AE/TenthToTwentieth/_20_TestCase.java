@@ -1,5 +1,6 @@
 package AE.TenthToTwentieth;
 
+import AE.Pages.HomePage.HomePage;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
@@ -8,9 +9,12 @@ import static utilities.Locators.*;
 public class _20_TestCase extends TestBase {
     @Test
     public void searchProductsAndVerifyCartAfterLogin(){
-//        1. Launch browser
-//        2. Navigate to url 'http://automationexercise.com'
-        navigateToSite();
+        HomePage homePage = new HomePage();
+        // 1. Launch browser
+        // 2. Navigate to url 'http://automationexercise.com'
+        homePage.navigateToSite();
+        // 3. Verify that home page is visible successfully
+        homePage.verifyMainPage();
 //        3. Click on 'Products' button
         click(lProductsTopBar);
 //        4. Verify user is navigated to ALL PRODUCTS page successfully

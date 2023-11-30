@@ -1,23 +1,23 @@
 package AE.FirstToTenth;
 
+import AE.Pages.HomePage.HomePage;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import utilities.TestBase;
 
 public class _2_CaseAX extends TestBase {
     @Test
     public void secCase() {
 
-        //1. Launch browser
-        //2. Navigate to url 'http://automationexercise.com'
-        driver.get("http://automationexercise.com");
-        //3. Verify that home page is visible successfully
-        WebElement mainSign = driver.findElement(By.xpath("//*[@*='logo pull-left']"));
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(mainSign.isDisplayed());
+
+        HomePage homePage = new HomePage();
+        // 1. Launch browser
+        // 2. Navigate to url 'http://automationexercise.com'
+        homePage.navigateToSite();
+        // 3. Verify that home page is visible successfully
+        homePage.verifyMainPage();
         //4. Click on 'Signup / Login' button
         driver.findElement(By.xpath("//i[@class='fa fa-lock']")).click();
         //5. Verify 'Login to your account' is visible

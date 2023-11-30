@@ -1,12 +1,12 @@
 package AE.FirstToTenth;
 
+import AE.Pages.HomePage.HomePage;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import utilities.TestBase;
 
 public class _10_TestCase extends TestBase {
@@ -14,13 +14,12 @@ public class _10_TestCase extends TestBase {
     @Test
     public void subscriptionTest(){
 
-       //1. Launch browser
-       //2. Navigate to url 'http://automationexercise.com'
-        driver.get("http://automationexercise.com");
-       //3. Verify that home page is visible successfully
-        WebElement homePage = driver.findElement(By.xpath("//div[@class='logo pull-left']"));
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(homePage.isDisplayed());
+        HomePage homePage = new HomePage();
+        // 1. Launch browser
+        // 2. Navigate to url 'http://automationexercise.com'
+        homePage.navigateToSite();
+        // 3. Verify that home page is visible successfully
+        homePage.verifyMainPage();
        //4. Scroll down to footer
         WebElement subscriptionEmailBox = driver.findElement(By.cssSelector("#susbscribe_email"));
         JavascriptExecutor jse = (JavascriptExecutor) driver;

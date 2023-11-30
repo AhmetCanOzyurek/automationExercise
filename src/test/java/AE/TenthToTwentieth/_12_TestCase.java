@@ -1,5 +1,6 @@
 package AE.TenthToTwentieth;
 
+import AE.Pages.HomePage.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -11,11 +12,13 @@ import static utilities.Locators.*;
 public class _12_TestCase extends TestBase {
     @Test
     public void AddProductsInCart(){
+
+        HomePage homePage = new HomePage();
         // 1. Launch browser
         // 2. Navigate to url 'http://automationexercise.com'
-        navigateToSite();
+        homePage.navigateToSite();
         // 3. Verify that home page is visible successfully
-        verifyMainPage();
+        homePage.verifyMainPage();
         // 4. Click 'Products' button
         click(lProducts);
         // 5. Hover over first product and click 'Add to cart'

@@ -1,5 +1,6 @@
 package AE;
 
+import AE.Pages.HomePage.HomePage;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
@@ -8,11 +9,12 @@ import static utilities.Locators.*;
 public class _25_TestCase extends TestBase {
         @Test
         public void goToSite(){
-//        1. Launch browser
-//        2. Navigate to url 'http://automationexercise.com'
-            navigateToSite();
-//        3. Verify that home page is visible successfully
-            verifyMainPage();
+            HomePage homePage = new HomePage();
+            // 1. Launch browser
+            // 2. Navigate to url 'http://automationexercise.com'
+            homePage.navigateToSite();
+            // 3. Verify that home page is visible successfully
+            homePage.verifyMainPage();
         }
         @Test(dependsOnMethods = {"goToSite"})
     public void scrollDown() {

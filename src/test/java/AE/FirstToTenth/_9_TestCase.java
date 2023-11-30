@@ -1,22 +1,22 @@
 package AE.FirstToTenth;
 
+import AE.Pages.HomePage.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import utilities.TestBase;
+
 import java.util.List;
 public class _9_TestCase extends TestBase {
 
     @Test
     public void searchProduct(){
-      // 1. Launch browser
-      // 2. Navigate to url 'http://automationexercise.com'
-        driver.get("http://automationexercise.com");
+        HomePage homePage = new HomePage();
+        // 1. Launch browser
+        // 2. Navigate to url 'http://automationexercise.com'
+        homePage.navigateToSite();
         // 3. Verify that home page is visible successfully
-        WebElement homePage = driver.findElement(By.xpath("//div[@class='logo pull-left']"));
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(homePage.isDisplayed());
+        homePage.verifyMainPage();
       // 4. Click on 'Products' button
         driver.findElement(By.xpath("//*[text()=' Products']")).click();
       // 5. Verify user is navigated to ALL PRODUCTS page successfully

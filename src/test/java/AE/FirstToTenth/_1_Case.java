@@ -1,9 +1,11 @@
 package AE.FirstToTenth;
 
+import AE.Pages.HomePage.HomePage;
 import com.github.javafaker.Faker;
-
-import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -12,14 +14,12 @@ import utilities.TestBase;
 public class _1_Case extends TestBase {
     @Test
     public void Test01() throws InterruptedException {
-        Actions actions = new Actions(driver);
+        HomePage homePage = new HomePage();
       // 1. Launch browser
-
        // 2. Navigate to url 'http://automationexercise.com'
-       driver.get("http://automationexercise.com");
+        homePage.navigateToSite();
        // 3. Verify that home page is visible successfully
-        WebElement homePageTitle = driver.findElement(By.xpath("//img[@alt='Website for automation practice']"));
-        Assert.assertTrue(homePageTitle.isDisplayed());
+homePage.verifyMainPage();
        // 4. Click on 'Signup / Login' button
         driver.findElement(By.xpath("//i[@class='fa fa-lock']")).click();
        // 5. Verify 'New User Signup!' is visible

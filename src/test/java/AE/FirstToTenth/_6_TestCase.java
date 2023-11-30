@@ -1,22 +1,21 @@
 package AE.FirstToTenth;
 
+import AE.Pages.HomePage.HomePage;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import utilities.TestBase;
 
 public class _6_TestCase extends TestBase {
     @Test
     public void contactUsFrom(){
-       // 2. Navigate to url 'http://automationexercise.com'
-        driver.get("http://automationexercise.com");
-       // 3. Verify that home page is visible successfully
-        //3. Verify that home page is visible successfully
-        WebElement homePage = driver.findElement(By.xpath("//div[@class='logo pull-left']"));
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(homePage.isDisplayed());
+        HomePage homePage = new HomePage();
+        // 1. Launch browser
+        // 2. Navigate to url 'http://automationexercise.com'
+        homePage.navigateToSite();
+        // 3. Verify that home page is visible successfully
+        homePage.verifyMainPage();
        // 4. Click on 'Contact Us' button
         driver.findElement(By.xpath("//*[text()=' Contact us']")).click();
        // 5. Verify 'GET IN TOUCH' is visible
@@ -44,8 +43,8 @@ driver.findElement(By.xpath("//*[@name='submit']")).click();
         WebElement successText = driver.findElement(By.xpath("//*[@class='status alert alert-success']"));
        // 11. Click 'Home' button and verify that landed to home page successfully
         driver.findElement(By.xpath("//*[text()=' Home']")).click();
-        homePage = driver.findElement(By.xpath("//div[@class='logo pull-left']"));
-        softAssert.assertTrue(homePage.isDisplayed());
+         WebElement homePageSign = driver.findElement(By.xpath("//div[@class='logo pull-left']"));
+        softAssert.assertTrue(homePageSign.isDisplayed());
 
         softAssert.assertAll();
     }

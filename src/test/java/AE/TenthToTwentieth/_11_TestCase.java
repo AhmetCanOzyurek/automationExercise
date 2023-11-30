@@ -1,29 +1,21 @@
 package AE.TenthToTwentieth;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import AE.Pages.HomePage.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import utilities.TestBase;
 
-public class _11_TestCase {
+public class _11_TestCase extends TestBase {
 
 public static void main(String[] args) throws InterruptedException {
-    WebDriver driver = new ChromeDriver();
-    WebDriverManager.chromedriver().setup();
-
-//2. Navigate to url 'http://automationexercise.com'
-    driver.get("http://automationexercise.com");
-    driver.manage().window().maximize();
-//3. Verify that home page is visible successfully
-    WebElement anasayfaLogosu = driver.findElement(By.xpath("//*[@alt='Website for automation practice']"));
-    /*if(anasayfaLogosu.isDisplayed()) System.out.println("Anasayfa logo görünürlügü Test Passed");
-    else System.out.println("Anasayfa logo görünürlügü Test Failed");
-    */
-    Assert.assertTrue(anasayfaLogosu.isDisplayed());
+    HomePage homePage = new HomePage();
+    // 1. Launch browser
+    // 2. Navigate to url 'http://automationexercise.com'
+    homePage.navigateToSite();
+    // 3. Verify that home page is visible successfully
+    homePage.verifyMainPage();
 //4. Click 'Cart' button
     WebElement cartButton = driver.findElement(By.xpath("//*[text()=' Cart']"));
     cartButton.click();

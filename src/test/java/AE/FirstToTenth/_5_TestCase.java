@@ -1,20 +1,20 @@
 package AE.FirstToTenth;
 
+import AE.Pages.HomePage.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import utilities.TestBase;
 
 public class _5_TestCase extends TestBase {
     @Test
     public void ExistingEmail() {
+        HomePage homePage = new HomePage();
+        // 1. Launch browser
         // 2. Navigate to url 'http://automationexercise.com'
-        driver.get("http://automationexercise.com");
+        homePage.navigateToSite();
         // 3. Verify that home page is visible successfully
-        WebElement homePageTitle = driver.findElement(By.xpath("//img[@alt='Website for automation practice']"));
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(homePageTitle.isDisplayed());
+        homePage.verifyMainPage();
         // 4. Click on 'Signup / Login' button
         driver.findElement(By.xpath("//i[@class='fa fa-lock']")).click();
         // 5. Verify 'New User Signup!' is visible

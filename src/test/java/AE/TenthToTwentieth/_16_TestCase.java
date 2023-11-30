@@ -1,5 +1,6 @@
 package AE.TenthToTwentieth;
 
+import AE.Pages.HomePage.HomePage;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import  utilities.TestBase;
@@ -8,11 +9,12 @@ public class _16_TestCase extends TestBase {
 
     @Test
     public void placeOrderCheckout(){
-       //1. Launch browser
-       //2. Navigate to url 'http://automationexercise.com'
-        navigateToSite();
-       //3. Verify that home page is visible successfully
-        verifyMainPage();
+        HomePage homePage = new HomePage();
+        // 1. Launch browser
+        // 2. Navigate to url 'http://automationexercise.com'
+        homePage.navigateToSite();
+        // 3. Verify that home page is visible successfully
+        homePage.verifyMainPage();
        //4. Click 'Signup / Login' button
         click(lSignupLogin);
        //5. Fill all details in Signup and create account

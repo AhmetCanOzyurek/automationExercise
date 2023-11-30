@@ -1,5 +1,6 @@
 package AE.TenthToTwentieth;
 
+import AE.Pages.HomePage.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -12,12 +13,12 @@ import static utilities.Locators.*;
 public class _15_TestCase extends TestBase {
 @Test
     public void placeOrder(){
-
-   // 1. Launch browser
-   // 2. Navigate to url 'http://automationexercise.com'
-    navigateToSite();
-   // 3. Verify that home page is visible successfully
-    verifyMainPage();
+    HomePage homePage = new HomePage();
+    // 1. Launch browser
+    // 2. Navigate to url 'http://automationexercise.com'
+    homePage.navigateToSite();
+    // 3. Verify that home page is visible successfully
+    homePage.verifyMainPage();
    // 4. Add products to cart
     String dynmaicXpath;
     for (int i = 1; i <=4 ; i++) {

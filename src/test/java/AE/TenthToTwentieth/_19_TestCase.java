@@ -1,7 +1,7 @@
 
 package AE.TenthToTwentieth;
 
-import AE.Pages.HomePage.HomePage;
+import Pages.HomePage.HomePage;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import utilities.TestBase;

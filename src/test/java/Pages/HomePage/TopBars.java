@@ -1,4 +1,4 @@
-package AE.Pages.HomePage;
+package Pages.HomePage;
 
 public enum TopBars {
     HOME,

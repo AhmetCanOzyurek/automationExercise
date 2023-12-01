@@ -1,7 +1,7 @@
 package AE.FirstToTenth;
 
-import AE.Pages.HomePage.HomePage;
-import AE.Pages.HomePage.TopBars;
+import Pages.HomePage.HomePage;
+import Pages.HomePage.TopBars;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

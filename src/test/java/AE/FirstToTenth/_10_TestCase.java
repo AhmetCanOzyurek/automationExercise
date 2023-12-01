@@ -1,6 +1,6 @@
 package AE.FirstToTenth;
 
-import AE.Pages.HomePage.HomePage;
+import Pages.HomePage.HomePage;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

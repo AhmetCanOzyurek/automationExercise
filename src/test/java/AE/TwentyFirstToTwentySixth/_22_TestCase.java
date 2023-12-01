@@ -1,6 +1,6 @@
-package AE;
+package AE.TwentyFirstToTwentySixth;
 
-import AE.Pages.HomePage.HomePage;
+import Pages.HomePage.HomePage;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import utilities.TestBase;

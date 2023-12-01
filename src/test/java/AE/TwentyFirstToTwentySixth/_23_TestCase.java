@@ -1,7 +1,7 @@
-package AE;
+package AE.TwentyFirstToTwentySixth;
 
-import AE.Pages.HomePage.HomePage;
-import AE.Pages.HomePage.TopBars;
+import Pages.HomePage.HomePage;
+import Pages.HomePage.TopBars;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 import static utilities.Locators.*;

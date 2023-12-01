@@ -1,11 +1,10 @@
-package AE.Pages.HomePage;
+package Pages.HomePage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import utilities.TestBase;
 import utility.Driver;
-import static AE.Pages.HomePage.HomePageLocators.*;
 
 public class HomePage extends TestBase {
     WebDriver driver;
@@ -16,42 +15,42 @@ public class HomePage extends TestBase {
         this(Driver.getDriver());
     }
     public void navigateToSite() {
-        driver.get(url);
+        driver.get(HomePageLocators.url);
     }
     public void verifyMainPage(){
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(lmainPage));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(HomePageLocators.lmainPage));
     }
     public void TopBarClicks(TopBars topBar){
         switch (topBar){
             case HOME:
-                click(lHome);
+                click(HomePageLocators.lHome);
                 break;
             case PRODUCTS:
-                click(lProductsTopBar);
+                click(HomePageLocators.lProductsTopBar);
                 break;
             case CART:
-                click(lCart);
+                click(HomePageLocators.lCart);
                 break;
             case SIGNUP_LOGIN:
-                click(lSignup_Login);
+                click(HomePageLocators.lSignup_Login);
                 break;
             case LOGOUT:
-                click(lLogout);
+                click(HomePageLocators.lLogout);
                 break;
             case DELETE_ACCOUNT:
-                click(lDeleteAccount);
+                click(HomePageLocators.lDeleteAccount);
                 break;
             case TEST_CASES:
-                click(lTestCases);
+                click(HomePageLocators.lTestCases);
                 break;
             case API_TESTING:
-                click(lApiTesting);
+                click(HomePageLocators.lApiTesting);
                 break;
             case VIDEO_TUTORIALS:
-                click(lVideoTutorials);
+                click(HomePageLocators.lVideoTutorials);
                 break;
             case CONTACT_US:
-                click(lContactUs);
+                click(HomePageLocators.lContactUs);
                 break;
         }
 

@@ -1,6 +1,6 @@
-package AE;
+package AE.TwentyFirstToTwentySixth;
 
-import AE.Pages.HomePage.HomePage;
+import Pages.HomePage.HomePage;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;

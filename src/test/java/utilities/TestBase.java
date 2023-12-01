@@ -43,12 +43,7 @@ public class TestBase {
     {
 
     }
-    public void navigateToSite() {
-        driver.get(url);
-    }
-    public void verifyMainPage(){
-    WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(lmainPage));
-    }
+
 
     public void click(By locator){
     WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));

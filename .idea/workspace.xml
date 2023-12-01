@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Verify Scroll Up without 'Arrow' button and Scroll Down functionality/ 26.TestCase&#10;&#10;Last testCase, farewell automation exercise.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utility/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AE/Pages/HomePage/HomePageLocators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AE/Pages/HomePage/HomePageProcesses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utility/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utility/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/Pages/HomePage/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/_26_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/_26_TestCase.java" afterDir="false" />
-    </list>
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -533,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701179675136</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/1">
+      <option name="closed" value="true" />
+      <created>1701347526606</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1701347526606</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,8 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AutomationExerciseTestCase6/ContactUsFromTest" />
-    <MESSAGE value="AutomationExerciseTestCase7/TestCasesPageTest" />
     <MESSAGE value="improwingMyFrameWork" />
     <MESSAGE value="8.testCaseAE/allProductsDetaillTest" />
     <MESSAGE value="9.testCaseAE/searchProductTest" />
@@ -573,7 +571,9 @@
     <MESSAGE value="Download Invoice after purchase order/ 24.TestCase" />
     <MESSAGE value="Verify Scroll Up using 'Arrow' button and Scroll Down functionality/ 25.TestCase" />
     <MESSAGE value="Verify Scroll Up without 'Arrow' button and Scroll Down functionality/ 26.TestCase&#10;&#10;Last testCase, farewell automation exercise." />
-    <option name="LAST_COMMIT_MESSAGE" value="Verify Scroll Up without 'Arrow' button and Scroll Down functionality/ 26.TestCase&#10;&#10;Last testCase, farewell automation exercise." />
+    <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project." />
+    <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/1" />
+    <option name="LAST_COMMIT_MESSAGE" value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

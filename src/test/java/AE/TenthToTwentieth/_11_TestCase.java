@@ -1,6 +1,7 @@
 package AE.TenthToTwentieth;
 
 import AE.Pages.HomePage.HomePage;
+import AE.Pages.HomePage.TopBars;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -17,8 +18,7 @@ public static void main(String[] args) throws InterruptedException {
     // 3. Verify that home page is visible successfully
     homePage.verifyMainPage();
 //4. Click 'Cart' button
-    WebElement cartButton = driver.findElement(By.xpath("//*[text()=' Cart']"));
-    cartButton.click();
+    homePage.TopBarClicks(TopBars.CART);
 //5. Scroll down to footer
     WebElement subsBox = driver.findElement(By.xpath("//input[@type='email']"));
     JavascriptExecutor jse = (JavascriptExecutor) driver;

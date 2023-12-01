@@ -1,6 +1,7 @@
 package AE.FirstToTenth;
 
 import AE.Pages.HomePage.HomePage;
+import AE.Pages.HomePage.TopBars;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ public class _5_TestCase extends TestBase {
         // 3. Verify that home page is visible successfully
         homePage.verifyMainPage();
         // 4. Click on 'Signup / Login' button
-        driver.findElement(By.xpath("//i[@class='fa fa-lock']")).click();
+        homePage.TopBarClicks(TopBars.SIGNUP_LOGIN);
         // 5. Verify 'New User Signup!' is visible
         WebElement newUserSign = driver.findElement(By.xpath("//*[text() ='New User Signup!']"));
         softAssert.assertTrue(newUserSign.isDisplayed());

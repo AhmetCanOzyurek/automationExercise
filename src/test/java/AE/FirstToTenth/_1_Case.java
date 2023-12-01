@@ -1,6 +1,7 @@
 package AE.FirstToTenth;
 
 import AE.Pages.HomePage.HomePage;
+import AE.Pages.HomePage.TopBars;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,9 +20,9 @@ public class _1_Case extends TestBase {
        // 2. Navigate to url 'http://automationexercise.com'
         homePage.navigateToSite();
        // 3. Verify that home page is visible successfully
-homePage.verifyMainPage();
+        homePage.verifyMainPage();
        // 4. Click on 'Signup / Login' button
-        driver.findElement(By.xpath("//i[@class='fa fa-lock']")).click();
+        homePage.TopBarClicks(TopBars.SIGNUP_LOGIN);
        // 5. Verify 'New User Signup!' is visible
         WebElement newUserSign = driver.findElement(By.xpath("//*[text() ='New User Signup!']"));
        Assert.assertTrue(newUserSign.isDisplayed());
@@ -33,13 +34,13 @@ homePage.verifyMainPage();
         emailBox.sendKeys("email@gmail.com");
         // 7. Click 'Signup' button
         driver.findElement(By.xpath("//*[text()='Signup']")).click();
-      //  8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
-        WebElement EAIYazısı = driver.findElement(By.xpath("(//h2[@class='title text-center'])[1]"));
-        Assert.assertTrue(EAIYazısı.isDisplayed());
-      //  9. Fill details: Title, Name, Email, Password, Date of birth
-WebElement radioTitleButton = driver.findElement(By.xpath("//*[@*='uniform-id_gender1']"));
-radioTitleButton.click();
-// name and email box already filled cause faker class
+        //  8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
+        WebElement EAIYazisi = driver.findElement(By.xpath("(//h2[@class='title text-center'])[1]"));
+        Assert.assertTrue(EAIYazisi.isDisplayed());
+        //  9. Fill details: Title, Name, Email, Password, Date of birth
+        WebElement radioTitleButton = driver.findElement(By.xpath("//*[@*='uniform-id_gender1']"));
+        radioTitleButton.click();
+        // name and email box already filled cause faker class
         WebElement passwordBox = driver.findElement(By.xpath("//*[@type='password']"));
         passwordBox.click();
         passwordBox.sendKeys("email.gmail");
@@ -50,15 +51,15 @@ radioTitleButton.click();
         Select select = new Select(dateOfBirth1);
         select.selectByValue("15");
 
-       Select select1 = new Select(dateOfBirth2);
+        Select select1 = new Select(dateOfBirth2);
         select1.selectByValue("6");
         Select select2 = new Select(dateOfBirth3);
         select2.selectByValue("1999");
-      //  10. Select checkbox 'Sign up for our newsletter!'
-driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
-      //  11. Select checkbox 'Receive special offers from our partners!'
+        //  10. Select checkbox 'Sign up for our newsletter!'
+        driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
+        //  11. Select checkbox 'Receive special offers from our partners!'
         driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).click();
-      //  12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
+        //  12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
         Thread.sleep(1000);
         WebElement firstNameTextBox = driver.findElement(By.xpath("//*[@id='first_name']"));
         JavascriptExecutor jse = (JavascriptExecutor) driver;

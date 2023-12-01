@@ -1,6 +1,7 @@
 package AE;
 
 import AE.Pages.HomePage.HomePage;
+import AE.Pages.HomePage.TopBars;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
@@ -16,7 +17,7 @@ public class _21_TestCase extends TestBase {
         // 3. Verify that home page is visible successfully
         homePage.verifyMainPage();
 //        3. Click on 'Products' button
-        click(lProductsTopBar);
+        homePage.TopBarClicks(TopBars.PRODUCTS);
 //        4. Verify user is navigated to ALL PRODUCTS page successfully
         verifyVisibility(lAllProductsTxt);
 //        5. Click on 'View Product' button

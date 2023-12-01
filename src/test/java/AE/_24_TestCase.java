@@ -1,11 +1,13 @@
 package AE;
 
 import AE.Pages.HomePage.HomePage;
+import AE.Pages.HomePage.TopBars;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
 import static utilities.Locators.*;
 public class _24_TestCase extends TestBase {
+    HomePage homePage;
     @Test
     public void goToSite(){
         HomePage homePage = new HomePage();
@@ -17,10 +19,11 @@ public class _24_TestCase extends TestBase {
     }
 @Test(dependsOnMethods = {"goToSite"})
     public void addProducts() {
+        homePage = new HomePage();
 //4. Add products to cart
 addProductsToCart(3);
 //5. Click 'Cart' button
-    click(lCart);
+    homePage.TopBarClicks(TopBars.CART);
 //6. Verify that cart page is displayed
     verifyVisibility(lShoppingCartTxt);
 }

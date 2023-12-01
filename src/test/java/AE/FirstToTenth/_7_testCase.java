@@ -1,6 +1,7 @@
 package AE.FirstToTenth;
 
 import AE.Pages.HomePage.HomePage;
+import AE.Pages.HomePage.TopBars;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ public class _7_testCase extends TestBase {
         // 3. Verify that home page is visible successfully
         homePage.verifyMainPage();
       //4. Click on 'Test Cases' button
-        driver.findElement(By.xpath("//*[text()=' Test Cases']")).click();
+        homePage.TopBarClicks(TopBars.TEST_CASES);
       //5. Verify user is navigated to test cases page successfully
         WebElement testCasesSign = driver.findElement(By.xpath("//b[text()='Test Cases']"));
         softAssert.assertTrue(testCasesSign.isDisplayed());

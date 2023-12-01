@@ -1,6 +1,7 @@
 package AE.TenthToTwentieth;
 
 import AE.Pages.HomePage.HomePage;
+import AE.Pages.HomePage.TopBars;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -20,7 +21,7 @@ public class _12_TestCase extends TestBase {
         // 3. Verify that home page is visible successfully
         homePage.verifyMainPage();
         // 4. Click 'Products' button
-        click(lProducts);
+        homePage.TopBarClicks(TopBars.PRODUCTS);
         // 5. Hover over first product and click 'Add to cart'
         WebElement element = driver.findElement(lAddToCartButton);
         scrollIntoWiev(element);

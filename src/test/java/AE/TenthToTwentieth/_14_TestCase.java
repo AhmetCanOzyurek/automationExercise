@@ -1,6 +1,7 @@
 package AE.TenthToTwentieth;
 
 import AE.Pages.HomePage.HomePage;
+import AE.Pages.HomePage.TopBars;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import utilities.TestBase;
@@ -17,7 +18,7 @@ public class _14_TestCase extends TestBase {
 //        4. Add products to cart
         addProductsToCart(3);
 //        5. Click 'Cart' button
-        click(lCart);
+        homePage.TopBarClicks(TopBars.CART);
 //        6. Verify that cart page is displayed
         verifyVisibility(lShoppingCartTxt);
 //        7. Click Proceed To Checkout

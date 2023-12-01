@@ -1,6 +1,7 @@
 package AE.FirstToTenth;
 
 import AE.Pages.HomePage.HomePage;
+import AE.Pages.HomePage.TopBars;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ public class _8_TestCasse extends TestBase {
         // 3. Verify that home page is visible successfully
         homePage.verifyMainPage();
        // 4. Click on 'Products' button
-        driver.findElement(By.xpath("//*[text()=' Products']")).click();
+        homePage.TopBarClicks(TopBars.PRODUCTS);
        // 5. Verify user is navigated to ALL PRODUCTS page successfully
         WebElement allProductsPage = driver.findElement(By.xpath("//input[@placeholder='Search Product']"));
         softAssert.assertTrue(allProductsPage.isDisplayed());

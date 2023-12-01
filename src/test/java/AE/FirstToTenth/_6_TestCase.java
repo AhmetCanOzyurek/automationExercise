@@ -1,6 +1,7 @@
 package AE.FirstToTenth;
 
 import AE.Pages.HomePage.HomePage;
+import AE.Pages.HomePage.TopBars;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -17,7 +18,7 @@ public class _6_TestCase extends TestBase {
         // 3. Verify that home page is visible successfully
         homePage.verifyMainPage();
        // 4. Click on 'Contact Us' button
-        driver.findElement(By.xpath("//*[text()=' Contact us']")).click();
+        homePage.TopBarClicks(TopBars.CONTACT_US);
        // 5. Verify 'GET IN TOUCH' is visible
         WebElement getInTouch = driver.findElement(By.xpath("//*[text()='Get In Touch']"));
         softAssert.assertTrue(getInTouch.isDisplayed());

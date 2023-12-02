@@ -2,15 +2,10 @@ package AE.FirstToTenth;
 
 import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
-import com.github.javafaker.Faker;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
+import Pages.Signup_LoginPage.SUpLogin;
 import org.testng.annotations.Test;
 import utilities.TestBase;
+import static utilities.Locators.*;
 
 public class _1_Case extends TestBase {
     @Test
@@ -24,85 +19,30 @@ public class _1_Case extends TestBase {
        // 4. Click on 'Signup / Login' button
         homePage.TopBarClicks(TopBars.SIGNUP_LOGIN);
        // 5. Verify 'New User Signup!' is visible
-        WebElement newUserSign = driver.findElement(By.xpath("//*[text() ='New User Signup!']"));
-       Assert.assertTrue(newUserSign.isDisplayed());
        // 6. Enter name and email address
-        Faker faker = new Faker();
-        WebElement nameBox = driver.findElement(By.xpath("//input[@data-qa='signup-name']"));
-        nameBox.sendKeys(faker.name().fullName());
-        WebElement emailBox =driver.findElement(By.xpath("//input[@data-qa='signup-email']"));
-        emailBox.sendKeys("email@gmail.com");
         // 7. Click 'Signup' button
-        driver.findElement(By.xpath("//*[text()='Signup']")).click();
         //  8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
-        WebElement EAIYazisi = driver.findElement(By.xpath("(//h2[@class='title text-center'])[1]"));
-        Assert.assertTrue(EAIYazisi.isDisplayed());
         //  9. Fill details: Title, Name, Email, Password, Date of birth
-        WebElement radioTitleButton = driver.findElement(By.xpath("//*[@*='uniform-id_gender1']"));
-        radioTitleButton.click();
         // name and email box already filled cause faker class
-        WebElement passwordBox = driver.findElement(By.xpath("//*[@type='password']"));
-        passwordBox.click();
-        passwordBox.sendKeys("email.gmail");
-        WebElement dateOfBirth1 = driver.findElement(By.xpath("//*[@id='days']"));
-        WebElement dateOfBirth2 = driver.findElement(By.xpath("//*[@id='months']"));
-        WebElement dateOfBirth3 = driver.findElement(By.xpath("//*[@id='years']"));
-
-        Select select = new Select(dateOfBirth1);
-        select.selectByValue("15");
-
-        Select select1 = new Select(dateOfBirth2);
-        select1.selectByValue("6");
-        Select select2 = new Select(dateOfBirth3);
-        select2.selectByValue("1999");
         //  10. Select checkbox 'Sign up for our newsletter!'
-        driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
         //  11. Select checkbox 'Receive special offers from our partners!'
-        driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).click();
         //  12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
-        Thread.sleep(1000);
-        WebElement firstNameTextBox = driver.findElement(By.xpath("//*[@id='first_name']"));
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].scrollIntoView();",firstNameTextBox);
-       actions.click(firstNameTextBox).
-               sendKeys(faker.name().firstName()).
-               sendKeys(Keys.TAB).
-               sendKeys(faker.name().lastName()).
-               sendKeys(Keys.TAB).
-               sendKeys(faker.company().name()).
-               sendKeys(Keys.TAB).
-               sendKeys(faker.address().fullAddress()).
-               sendKeys(Keys.TAB).
-               sendKeys(faker.address().fullAddress()).perform();
-        WebElement countryDDM = driver.findElement(By.xpath("//*[@id='country']"));
-        Select select3 = new Select(countryDDM);
-        select3.selectByValue("Canada");
-        actions.sendKeys(Keys.TAB).
-                sendKeys("muz").
-                sendKeys(Keys.TAB).
-                sendKeys(faker.rickAndMorty().location()).
-                sendKeys(Keys.TAB).
-                sendKeys(faker.country().countryCode3()).
-                sendKeys(Keys.TAB).
-                sendKeys(faker.phoneNumber().cellPhone()).perform();
         //  13. Click 'Create Account button'
-       WebElement createAccountButton =  driver.findElement(By.xpath("//button[@data-qa='create-account']"));
-        jse.executeScript("arguments[0].scrollIntoView();",createAccountButton);
-        createAccountButton.click();
+        /**
+         * All in one method
+         */
+        SUpLogin sUpLogin = new SUpLogin();
+        sUpLogin.newUserSignUp();
       //  14. Verify that 'ACCOUNT CREATED!' is visible
-        WebElement accountCreated = driver.findElement(By.xpath("//*[text()='Account Created!']"));
-        Assert.assertTrue(accountCreated.isDisplayed());
       //  15. Click 'Continue' button//*[text()='Continue']
-        driver.findElement(By.xpath("//*[text()='Continue']")).click();
+        sUpLogin.verifyAccountCreated();
       //  16. Verify that 'Logged in as username' is visible//*[text()=' Logged in as ']
-        WebElement loggedSign = driver.findElement(By.xpath("//*[text()=' Logged in as ']"));
-        Assert.assertTrue(loggedSign.isDisplayed());
+        sUpLogin.verifyloggedAsUN();
        // 17. Click 'Delete Account' button//*[text()=' Delete Account']
-       // driver.findElement(By.xpath("//*[text()=' Delete Account']")).click();
+        homePage.TopBarClicks(TopBars.DELETE_ACCOUNT);
          // 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
-     //   WebElement deletedSign = driver.findElement(By.xpath("//*[text()='Account Deleted!']"));
-     //   Assert.assertTrue(deletedSign.isDisplayed());
-      //  driver.findElement(By.xpath("//*[text()='Continue']")).click();
+        verifyVisibility(lAccountDeletedTxt);
+      click(lContinueAfterAccountCreated);
 //
     }
 }

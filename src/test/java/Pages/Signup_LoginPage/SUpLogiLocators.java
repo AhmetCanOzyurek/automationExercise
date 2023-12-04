@@ -19,4 +19,13 @@ public interface SUpLogiLocators {
     By lAccountCreatedText = By.xpath("//*[text()='Account Created!']");
     By lLoggedAsUsernameTxt = By.xpath("//*[text()=' Logged in as ']");
     By lContinueAfterAccountCreated = By.xpath("//*[text()='Continue']");
+
+
+    //Login
+    By lLoginEmail = By.xpath("(//input[@placeholder='Email Address'])[1]");
+    By lLoginPassword = By.xpath("(//input[@placeholder='Password'])[1]");
+    By lLoginTxt = By.xpath("//h2[text()='Login to your account']");
+            String myUserMail = "email@gmail.com";
+            String myPassowrd = "email.gmail";
+        By lLoginButton = By.xpath("//button[@data-qa='login-button']") ;
 }

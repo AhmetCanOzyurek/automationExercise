@@ -37,12 +37,14 @@ public interface HomePageLocators {
 
     ///////////
     // TOPBAR
+
     By lHome = By.xpath("(//ul[@class='nav navbar-nav']//li)[1]");
     By lProductsTopBar = By.xpath("(//ul[@class='nav navbar-nav']//li)[2]");
     By lCart = By.xpath("(//ul[@class='nav navbar-nav']//li)[3]");
     By lSignup_Login = By.xpath("(//ul[@class='nav navbar-nav']//li)[4]");
     By lLogout = By.xpath("(//ul[@class='nav navbar-nav']//li)[4]");
     By lDeleteAccount = By.xpath("//*[text()=' Delete Account']");
+        By lAccountDeletedTxt = By.xpath("//*[text()='Account Deleted!']");
     By lTestCases = By.xpath("(//ul[@class='nav navbar-nav']//li)[5]");
     By lApiTesting = By.xpath("(//ul[@class='nav navbar-nav']//li)[6]");
     By lVideoTutorials = By.xpath("(//ul[@class='nav navbar-nav']//li)[7]");

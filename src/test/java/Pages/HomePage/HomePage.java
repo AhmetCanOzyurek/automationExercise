@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 import utilities.TestBase;
 import utility.Driver;
 
-import static Pages.HomePage.HomePageLocators.lmainPage;
+import static Pages.HomePage.HomePageLocators.*;
+
 public class HomePage extends TestBase {
     WebDriver driver;
     public HomePage(WebDriver givenDriver){
@@ -57,6 +58,10 @@ public class HomePage extends TestBase {
                 break;
         }
 
+    }
+    public void deleteAccount(){
+        click(lDeleteAccount);
+        verifyVisibility(lAccountDeletedTxt);
     }
 
 

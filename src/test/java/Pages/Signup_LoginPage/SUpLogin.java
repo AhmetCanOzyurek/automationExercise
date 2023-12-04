@@ -70,5 +70,10 @@ public class SUpLogin extends TestBase {
     public void verifyloggedAsUN(){
         verifyVisibility(lLoggedAsUsernameTxt);
     }
+    public void Login(){
+        sendKeys(lLoginEmail,myUserMail);
+        sendKeys(lLoginPassword,myPassowrd);
+        click(lLoginButton);
+    }
 
 }

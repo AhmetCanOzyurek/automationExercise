@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Little Arrangments." />
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise Project.&#10;part/4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -549,7 +552,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701440536371</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/3 &#10;Signup/Login pages added.">
+      <option name="closed" value="true" />
+      <created>1701525325449</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1701525325450</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Revisions for my automationExercise Project.&#10;part/4">
+      <option name="closed" value="true" />
+      <created>1701686202376</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1701686202376</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,10 +583,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="9.testCaseAE/searchProductTest" />
-    <MESSAGE value="10.testCaseAE/subscriptionTest" />
-    <MESSAGE value="11.testCaseAE/cartSubscriptionTest" />
-    <MESSAGE value="12.testCaseAE" />
     <MESSAGE value="FullFrameWork" />
     <MESSAGE value="productQuantityTest" />
     <MESSAGE value="placeOrder/14.testCase" />
@@ -589,7 +604,11 @@
     <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/1" />
     <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/2" />
     <MESSAGE value="Little Arrangments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Little Arrangments." />
+    <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/3" />
+    <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/3 &#10;Signup/Login pages added." />
+    <MESSAGE value="Revisions for my automationExercise Project.&#10;part/4 &#10;Signup/Login pages added." />
+    <MESSAGE value="Revisions for my automationExercise Project.&#10;part/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise Project.&#10;part/4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -27,5 +27,9 @@ public interface SUpLogiLocators {
     By lLoginTxt = By.xpath("//h2[text()='Login to your account']");
             String myUserMail = "email@gmail.com";
             String myPassowrd = "email.gmail";
+            String myIncorrectMail = "email11@gmail.com";
+            String myIncorrectPassword = "email..gmail";
         By lLoginButton = By.xpath("//button[@data-qa='login-button']") ;
+        By lIncorrectTxt = By.xpath("//*[text()='Your email or password is incorrect!']");
 }
+

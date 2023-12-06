@@ -71,9 +71,17 @@ public class SUpLogin extends TestBase {
         verifyVisibility(lLoggedAsUsernameTxt);
     }
     public void Login(){
+        verifyVisibility(lLoginTxt);
         sendKeys(lLoginEmail,myUserMail);
         sendKeys(lLoginPassword,myPassowrd);
         click(lLoginButton);
+    }
+    public void IncorrectLogin(){
+        verifyVisibility(lLoginTxt);
+        sendKeys(lLoginEmail,myIncorrectMail);
+        sendKeys(lLoginPassword,myIncorrectPassword);
+        click(lLoginButton);
+        verifyVisibility(lIncorrectTxt);
     }
 
 }

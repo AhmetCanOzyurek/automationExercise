@@ -10,6 +10,7 @@ import static Pages.Signup_LoginPage.SUpLogiLocators.*;
 import static utilities.Locators.lLoggedAsUsernameTxt;
 
 public class SUpLogin extends TestBase {
+
     public void newUserSignUp(){
         String fakerEmail = faker.internet().emailAddress();
         String fakerUsername = faker.rickAndMorty().character();
@@ -82,6 +83,12 @@ public class SUpLogin extends TestBase {
         sendKeys(lLoginPassword,myIncorrectPassword);
         click(lLoginButton);
         verifyVisibility(lIncorrectTxt);
+    }
+    public void alreadyExistEmail(){
+        verifyVisibility(lNewUserSignupTxt);
+        sendKeys(lNewUserSignupNameBox, "helaVelaVelvela");
+        sendKeys(lNewUserSignupEmailBox, myUserMail);
+        click(lNewUserSignupButton);
     }
 
 }

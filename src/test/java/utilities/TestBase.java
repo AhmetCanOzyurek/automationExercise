@@ -40,9 +40,6 @@ public class TestBase {
         actions = new Actions(driver);
 
     }
-    {
-
-    }
 
 
     public void click(By locator){

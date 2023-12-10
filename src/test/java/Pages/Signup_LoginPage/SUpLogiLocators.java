@@ -31,5 +31,6 @@ public interface SUpLogiLocators {
             String myIncorrectPassword = "email..gmail";
         By lLoginButton = By.xpath("//button[@data-qa='login-button']") ;
         By lIncorrectTxt = By.xpath("//*[text()='Your email or password is incorrect!']");
+        By lAlreadyExistTxt = By.xpath("//p[contains(text(),'already exist')]");
 }
 

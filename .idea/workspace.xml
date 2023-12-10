@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise Project.&#10;part/5">
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise Project.&#10;part/6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_4_TestCAse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_4_TestCAse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -577,7 +576,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701856687469</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Revisions for my automationExercise Project.&#10;part/6">
+      <option name="closed" value="true" />
+      <created>1701950525457</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1701950525458</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +599,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="productQuantityTest" />
     <MESSAGE value="placeOrder/14.testCase" />
     <MESSAGE value="placeOrderRegisterBeforeCheckout/15.testCase" />
     <MESSAGE value="removeProductFromCart/16.testCase" />
@@ -617,7 +623,8 @@
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/4 &#10;Signup/Login pages added." />
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/4" />
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise Project.&#10;part/5" />
+    <MESSAGE value="Revisions for my automationExercise Project.&#10;part/6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise Project.&#10;part/6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

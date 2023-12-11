@@ -15,11 +15,6 @@ public class _2_CaseAX extends TestBase {
         homePage = new HomePage();
         sUpLogin = new SUpLogin();
     }
-    @BeforeTest
-    public void setup(){
-        homePage = new HomePage();
-        sUpLogin = new SUpLogin();
-    }
     @Test
     public void initial(){
         // 1. Launch browser

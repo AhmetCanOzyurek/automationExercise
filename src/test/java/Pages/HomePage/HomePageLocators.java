@@ -49,7 +49,7 @@ public interface HomePageLocators {
     By lApiTesting = By.xpath("(//ul[@class='nav navbar-nav']//li)[6]");
     By lVideoTutorials = By.xpath("(//ul[@class='nav navbar-nav']//li)[7]");
     By lContactUs = By.xpath("(//ul[@class='nav navbar-nav']//li)[8]");
-
+    By lTestCaseSign = By.xpath("//b[text()='Test Cases']");
 
 
 }

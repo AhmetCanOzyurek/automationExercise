@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise Project.&#10;part/6">
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise Project.&#10;part/7">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ContactUs/ContactUs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ContactUs/ContactUsLocators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_2_CaseAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_2_CaseAX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_6_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_6_TestCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +85,7 @@
       <recent name="AE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG._4_TestCAse.logoutUserTest">
+  <component name="RunManager" selected="TestNG._6_TestCase">
     <configuration name="_11_TestCase" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._11_TestCase" />
       <module name="automationExercise" />
@@ -168,24 +172,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_24_TestCase.payments" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AE.TwentyFirstToTwentySixth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE.TwentyFirstToTwentySixth._24_TestCase" />
-      <option name="METHOD_NAME" value="payments" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_25_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -238,6 +224,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_6_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.FirstToTenth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE.FirstToTenth" />
+      <option name="MAIN_CLASS_NAME" value="AE.FirstToTenth._6_TestCase" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_9_TestCase.searchProduct" type="TestNG" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -260,19 +263,19 @@
       <item itemvalue="Application._11_TestCase" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
+      <item itemvalue="TestNG._6_TestCase" />
       <item itemvalue="TestNG._4_TestCAse.logoutUserTest" />
       <item itemvalue="TestNG._26_TestCase" />
       <item itemvalue="TestNG._25_TestCase" />
       <item itemvalue="TestNG._24_TestCase" />
-      <item itemvalue="TestNG._24_TestCase.payments" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG._6_TestCase" />
         <item itemvalue="TestNG._4_TestCAse.logoutUserTest" />
         <item itemvalue="TestNG._26_TestCase" />
         <item itemvalue="TestNG._25_TestCase" />
         <item itemvalue="TestNG._24_TestCase" />
-        <item itemvalue="TestNG._24_TestCase.payments" />
       </list>
     </recent_temporary>
   </component>
@@ -584,7 +587,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701950525458</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Revisions for my automationExercise Project.&#10;part/7">
+      <option name="closed" value="true" />
+      <created>1702166874094</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1702166874094</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -599,7 +610,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="placeOrder/14.testCase" />
     <MESSAGE value="placeOrderRegisterBeforeCheckout/15.testCase" />
     <MESSAGE value="removeProductFromCart/16.testCase" />
     <MESSAGE value="viewCategoryProduct/17.testCase" />
@@ -624,7 +634,8 @@
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/4" />
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/5" />
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise Project.&#10;part/6" />
+    <MESSAGE value="Revisions for my automationExercise Project.&#10;part/7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise Project.&#10;part/7" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

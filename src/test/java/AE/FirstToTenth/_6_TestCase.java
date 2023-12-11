@@ -1,52 +1,49 @@
 package AE.FirstToTenth;
 
+import Pages.ContactUs.ContactUs;
 import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
-import com.github.javafaker.Faker;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
 public class _6_TestCase extends TestBase {
+    HomePage homePage;
+    ContactUs cu;
+    @BeforeTest
+    public void setup(){
+        cu = new ContactUs();
+        homePage = new HomePage();
+    }
     @Test
-    public void contactUsFrom(){
-        HomePage homePage = new HomePage();
+    public void initial(){
         // 1. Launch browser
         // 2. Navigate to url 'http://automationexercise.com'
         homePage.navigateToSite();
         // 3. Verify that home page is visible successfully
         homePage.verifyMainPage();
-       // 4. Click on 'Contact Us' button
+    }
+    @Test(dependsOnMethods = {"initial"})
+    public void contactUsFrom() {
+        // 4. Click on 'Contact Us' button
         homePage.TopBarClicks(TopBars.CONTACT_US);
-       // 5. Verify 'GET IN TOUCH' is visible
-        WebElement getInTouch = driver.findElement(By.xpath("//*[text()='Get In Touch']"));
-        softAssert.assertTrue(getInTouch.isDisplayed());
-       // 6. Enter name, email, subject and message
-        WebElement nameBox= driver.findElement(By.xpath("//*[@placeholder='Name']"));
-        WebElement emailBox= driver.findElement(By.xpath("//*[@placeholder='Email']"));
-        WebElement subjectBox= driver.findElement(By.xpath("//*[@placeholder='Subject']"));
-        WebElement messageBox= driver.findElement(By.xpath("//*[@placeholder='Your Message Here']"));
-        Faker faker = new Faker();
-        nameBox.sendKeys("Colin Weissnat");
-        emailBox.sendKeys("email@gmail.com");
-        subjectBox.sendKeys("love from Yozgat");
-        messageBox.sendKeys(faker.rickAndMorty().quote());
-       // 7. Upload file
-WebElement uploadButton = driver.findElement(By.xpath("//*[@name='upload_file']"));
-String dosyaYolu = "/Users/enesoncu/IdeaProjects/automationExercise/src/test/java/AE/TestDosyası";
-uploadButton.sendKeys(dosyaYolu);
-       // 8. Click 'Submit' button
-driver.findElement(By.xpath("//*[@name='submit']")).click();
+        // 5. Verify 'GET IN TOUCH' is visible
+        cu.verifyGetInTouch();
+        // 6. Enter name, email, subject and message
+        cu.enterCredentialsAndMessage();
+        // 7. Upload file
+        cu.uploadFile();
+        // 8. Click 'Submit' button
+        cu.submit();
+    }
+    @Test(dependsOnMethods = {"contactUsFrom"})
+    public void verifySuccesNBackHome(){
        // 9. Click OK button
-        driver.switchTo().alert().accept();
+        cu.acceptAlert();
        // 10. Verify success message 'Success! Your details have been submitted successfully.' is visible
-        WebElement successText = driver.findElement(By.xpath("//*[@class='status alert alert-success']"));
+        cu.verifySuccessText();
        // 11. Click 'Home' button and verify that landed to home page successfully
-        driver.findElement(By.xpath("//*[text()=' Home']")).click();
-         WebElement homePageSign = driver.findElement(By.xpath("//div[@class='logo pull-left']"));
-        softAssert.assertTrue(homePageSign.isDisplayed());
-
-        softAssert.assertAll();
+     homePage.TopBarClicks(TopBars.HOME);
+        homePage.verifyMainPage();
     }
 }

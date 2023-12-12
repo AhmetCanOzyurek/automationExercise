@@ -2,49 +2,59 @@ package AE.FirstToTenth;
 
 import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import Pages.Products.Products;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
 public class _8_TestCasse extends TestBase {
+    HomePage homePage;
+    Products products;
+    @BeforeTest
+    public void setup(){
+        homePage = new HomePage();
+        products = new Products();
+    }
     @Test
-    public void allProductsDetailPage08 (){
-        HomePage homePage = new HomePage();
+    public void initial(){
         // 1. Launch browser
         // 2. Navigate to url 'http://automationexercise.com'
         homePage.navigateToSite();
         // 3. Verify that home page is visible successfully
         homePage.verifyMainPage();
-       // 4. Click on 'Products' button
+    }
+    @Test(dependsOnMethods = {"initial"})
+    public void verifyAllProductsTest() {
+        // 4. Click on 'Products' button
         homePage.TopBarClicks(TopBars.PRODUCTS);
-       // 5. Verify user is navigated to ALL PRODUCTS page successfully
-        WebElement allProductsPage = driver.findElement(By.xpath("//input[@placeholder='Search Product']"));
-        softAssert.assertTrue(allProductsPage.isDisplayed());
-       // 6. The products list is visible
-        WebElement productList = driver.findElement(By.xpath("//h2[text()='Category']"));
-        softAssert.assertTrue(productList.isDisplayed());
+        // 5. Verify user is navigated to ALL PRODUCTS page successfully
+        products.verifyAllProductsTxt();
+        // 6. The products list is visible
+        products.verifyProductsList();
+    }
+    @Test(dependsOnMethods = {"verifyAllProductsTest"})
+    public void verifyProductsDetailPageTest()
+    {
        // 7. Click on 'View Product' of first product
-        driver.findElement(By.xpath("(//*[text()='View Product'])[1]")).click();
+        products.clickFIViewProduct();
        // 8. User is landed to product detail page
-        WebElement productInformationDetails = driver.findElement(By.xpath("//div[@class='product-details']"));
-        softAssert.assertTrue(productInformationDetails.isDisplayed());
-       // 9. Verify that detail is visible: product name, category, price, availability, condition, brand
-        WebElement productName = driver.findElement(By.xpath("//*[text()='Blue Top']"));
-        WebElement category = driver.findElement(By.xpath("//*[text()='Category: Women > Tops']"));
-        WebElement price = driver.findElement(By.xpath("//*[text()='Rs. 500']"));
-        WebElement availability = driver.findElement(By.xpath("//*[text()='Availability:']"));
-        WebElement condition = driver.findElement(By.xpath("//*[text()='Condition:']"));
-        WebElement brand = driver.findElement(By.xpath("//*[text()='Brand:']"));
-
-        softAssert.assertTrue(productName.isDisplayed());
-        softAssert.assertTrue(category.isDisplayed());
-        softAssert.assertTrue(price.isDisplayed());
-        softAssert.assertTrue(availability.isDisplayed());
-        softAssert.assertTrue(condition.isDisplayed());
-        softAssert.assertTrue(brand.isDisplayed());
-
-
-        softAssert.assertAll();
+       products.verifyProductsDetailPage();
+    }
+    @Test(dataProvider = "productDetails",dependsOnMethods = {"verifyProductsDetailPageTest"})
+    public void verifyDetails(String details){
+        // 9. Verify that detail is visible: product name, category, price, availability, condition, brand
+        products.verifyProductDetails(details);
+    }
+    @DataProvider
+    public Object[][] productDetails(){
+        return new Object[][]{
+                {"Blue Top"},
+                {"Category:"},
+                {"Rs. 500"},
+                {"Availability:"},
+                {"Condition:"},
+                {"Brand:"},
+        };
     }
 }

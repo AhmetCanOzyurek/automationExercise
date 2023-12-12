@@ -1,20 +1,11 @@
 package Pages.HomePage;
 
-import org.openqa.selenium.WebDriver;
 import utilities.TestBase;
-import utility.Driver;
 
 import static Pages.HomePage.HomePageLocators.*;
 
 public class HomePage extends TestBase {
-    WebDriver driver;
-    public HomePage(WebDriver givenDriver){
-        driver = givenDriver;
-    }
 
-    public HomePage(){
-        this(Driver.getDriver());
-    }
 
     public void navigateToSite() {
         driver.get(HomePageLocators.url);

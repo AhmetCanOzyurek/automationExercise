@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise Project.&#10;part/7">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ContactUs/ContactUs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ContactUs/ContactUsLocators.java" afterDir="false" />
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise Project.&#10;part/8">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/Products/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/Products/ProductsLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_2_CaseAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_2_CaseAX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_6_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_6_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_8_TestCasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_8_TestCasse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,19 +62,22 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/enesoncu/IdeaProjects/automationExercise&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG._3_TestCase.executor": "Run",
+    "TestNG._8_TestCasse.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/enesoncu/IdeaProjects/automationExercise",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="AE" />
@@ -85,7 +89,7 @@
       <recent name="AE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG._6_TestCase">
+  <component name="RunManager" selected="TestNG._8_TestCasse">
     <configuration name="_11_TestCase" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._11_TestCase" />
       <module name="automationExercise" />
@@ -155,40 +159,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_24_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AE.TwentyFirstToTwentySixth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE.TwentyFirstToTwentySixth._24_TestCase" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_25_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AE.TwentyFirstToTwentySixth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE" />
-      <option name="MAIN_CLASS_NAME" value="AE.TwentyFirstToTwentySixth._25_TestCase" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_26_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -199,6 +169,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="AE" />
       <option name="MAIN_CLASS_NAME" value="AE.TwentyFirstToTwentySixth._26_TestCase" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_3_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.FirstToTenth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE.FirstToTenth" />
+      <option name="MAIN_CLASS_NAME" value="AE.FirstToTenth._3_TestCase" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -241,6 +228,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_8_TestCasse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.FirstToTenth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE.FirstToTenth" />
+      <option name="MAIN_CLASS_NAME" value="AE.FirstToTenth._8_TestCasse" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_9_TestCase.searchProduct" type="TestNG" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -263,21 +267,28 @@
       <item itemvalue="Application._11_TestCase" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
+      <item itemvalue="TestNG._3_TestCase" />
+      <item itemvalue="TestNG._8_TestCasse" />
       <item itemvalue="TestNG._6_TestCase" />
       <item itemvalue="TestNG._4_TestCAse.logoutUserTest" />
       <item itemvalue="TestNG._26_TestCase" />
-      <item itemvalue="TestNG._25_TestCase" />
-      <item itemvalue="TestNG._24_TestCase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG._8_TestCasse" />
+        <item itemvalue="TestNG._3_TestCase" />
         <item itemvalue="TestNG._6_TestCase" />
         <item itemvalue="TestNG._4_TestCAse.logoutUserTest" />
         <item itemvalue="TestNG._26_TestCase" />
-        <item itemvalue="TestNG._25_TestCase" />
-        <item itemvalue="TestNG._24_TestCase" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-azul-20.0.2-8336523bb0d9-87528728" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -595,7 +606,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702166874094</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Revisions for my automationExercise Project.&#10;part/8">
+      <option name="closed" value="true" />
+      <created>1702306553143</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1702306553143</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -610,7 +629,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="placeOrderRegisterBeforeCheckout/15.testCase" />
     <MESSAGE value="removeProductFromCart/16.testCase" />
     <MESSAGE value="viewCategoryProduct/17.testCase" />
     <MESSAGE value="RegisterWhileCheckout/14.testCase" />
@@ -635,7 +653,8 @@
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/5" />
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/6" />
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise Project.&#10;part/7" />
+    <MESSAGE value="Revisions for my automationExercise Project.&#10;part/8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise Project.&#10;part/8" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

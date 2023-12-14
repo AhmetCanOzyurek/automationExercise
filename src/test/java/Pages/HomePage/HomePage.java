@@ -54,6 +54,18 @@ public class HomePage extends TestBase {
         click(lDeleteAccount);
         verifyVisibility(lAccountDeletedTxt);
     }
-
+    public void scrollDownToEnd(){
+        scrollIntoWiev(lSubscriptionEmailBox);
+    }
+    public void verifySubsTxt(){
+        verifyVisibility(lSubscriptionTxt);
+    }
+    public void enterEmailtoSubsBox(){
+        sendKeys(lSubscriptionEmailBox,faker.internet().emailAddress());
+        click(lSubsSubmit);
+    }
+    public void verifySubsSuccessAlert(){
+        verifyVisibility(lSubsSuccessMessage);
+    }
 
 }

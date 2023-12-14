@@ -35,6 +35,13 @@ public interface HomePageLocators {
         By lHMbrand = By.cssSelector("ul li a[href = '/brand_products/H&M']");
             By lHmBrandPageTxt = By.xpath("//*[text()='Brand - H&M Products']");
 
+    By lSubscriptionEmailBox = By.cssSelector("#susbscribe_email");
+    By lSubscriptionTxt = By.xpath("//*[text()='Subscription']");
+    By lSubsSubmit = By.cssSelector("#subscribe");
+    By lSubsSuccessMessage = By.cssSelector("div[class='alert-success alert']");
+
+
+
     ///////////
     // TOPBAR
 

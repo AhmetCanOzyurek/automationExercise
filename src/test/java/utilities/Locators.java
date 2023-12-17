@@ -33,7 +33,7 @@ public interface Locators {
                 By lHMbrand = By.cssSelector("ul li a[href = '/brand_products/H&M']");
                     By lHmBrandPageTxt = By.xpath("//*[text()='Brand - H&M Products']");
         //TopBar
-            By lCart = By.xpath("//a[text()=' Cart']");
+            By lCart = By.xpath("//a[text()=' CartPage']");
                 // cart page
                      By lProceedToChckout =  By.xpath("//*[text()='Proceed To Checkout']");
                      //Checkout
@@ -60,8 +60,8 @@ public interface Locators {
     By lAddToCartButton2 = By.xpath("(//a[@data-product-id='2'])[1]");
     By lContinueShopping = By.xpath("//*[.='Continue Shopping']");
 
-    By lShoppingCartTxt = By.xpath("//*[text()='Shopping Cart']");
-    By lWievCart = By.xpath("//*[text()='View Cart']");
+    By lShoppingCartTxt = By.xpath("//*[text()='Shopping CartPage']");
+    By lWievCart = By.xpath("//*[text()='View CartPage']");
     By lviewProduct = By.xpath("(//*[text()='View Product'])[1]");
         //viewProductPage
         By lWriteYourReviewtxt = By.xpath("//a[text()='Write Your Review']");

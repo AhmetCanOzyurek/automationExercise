@@ -15,11 +15,11 @@ public class _14_TestCase extends TestBase {
       homePage.navigateToSite();
       // 3. Verify that home page is visible successfully
       homePage.verifyMainPage();
-//        4. Add products to cart
+//        4. Add products to cartPage
         addProductsToCart(3);
-//        5. Click 'Cart' button
+//        5. Click 'CartPage' button
         homePage.TopBarClicks(TopBars.CART);
-//        6. Verify that cart page is displayed
+//        6. Verify that cartPage page is displayed
         verifyVisibility(lShoppingCartTxt);
 //        7. Click Proceed To Checkout
         click(lProceedToChckout);
@@ -31,7 +31,7 @@ public class _14_TestCase extends TestBase {
         verifyVisibility(lAccountCreatedText);
 //        11. Verify ' Logged in as username' at top
         verifyVisibility(lLoggedAsUsernameTxt);
-//        12.Click 'Cart' button
+//        12.Click 'CartPage' button
         click(lCart);
 //        13. Click 'Proceed To Checkout' button
         click(lProceedToChckout);

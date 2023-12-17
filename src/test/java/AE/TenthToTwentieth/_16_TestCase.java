@@ -25,11 +25,11 @@ public class _16_TestCase extends TestBase {
 click(By.linkText("Continue"));
        //7. Verify ' Logged in as username' at top
 verifyVisibility(By.partialLinkText("Logged"));
-       //8. Add products to cart
+       //8. Add products to cartPage
 addProductsToCart(3);
-       //9. Click 'Cart' button
+       //9. Click 'CartPage' button
         click(lCart);
-       //10. Verify that cart page is displayed
+       //10. Verify that cartPage page is displayed
         verifyVisibility(lShoppingCartTxt);
         //11. Click Proceed To Checkout
         click(lProceedToChckout);

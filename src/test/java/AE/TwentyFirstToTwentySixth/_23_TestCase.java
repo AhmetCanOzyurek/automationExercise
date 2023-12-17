@@ -27,7 +27,7 @@ verifyVisibility(lAccountCreatedText);
 verifyVisibility(lLoggedAsUsernameTxt);
 //        8. Add products to cart
         addProductsToCart(3);
-//        9. Click 'Cart' button
+//        9. Click 'CartPage' button
         click(lCart);
 //        10. Verify that cart page is displayed
         verifyVisibility(lShoppingCartTxt);

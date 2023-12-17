@@ -20,7 +20,7 @@ public class _15_TestCase extends TestBase {
     homePage.navigateToSite();
     // 3. Verify that home page is visible successfully
     homePage.verifyMainPage();
-   // 4. Add products to cart
+   // 4. Add products to cartPage
     String dynmaicXpath;
     for (int i = 1; i <=4 ; i++) {
         dynmaicXpath = "(//a[@data-product-id='"+i+"'])[1]";
@@ -28,9 +28,9 @@ public class _15_TestCase extends TestBase {
         click(element);
         click(lContinueShopping);
     }
-   // 5. Click 'Cart' button
+   // 5. Click 'CartPage' button
     homePage.TopBarClicks(TopBars.CART);
-   // 6. Verify that cart page is displayed
+   // 6. Verify that cartPage page is displayed
     verifyVisibility(lShoppingCartTxt);
    // 7. Click Proceed To Checkout
     click(driver.findElement(By.xpath("//*[text()='Proceed To Checkout']")));
@@ -88,7 +88,7 @@ actions.sendKeys( Keys.TAB + "hela"+ Keys.TAB)
 verifyVisibility(By.xpath("//*[text()='Account Created!']"));
    // 11. Verify ' Logged in as username' at top
     verifyVisibility(By.xpath("//*[text()='Account Created!']"));
-   // 12.Click 'Cart' button
+   // 12.Click 'CartPage' button
     click(lCart);
    // 13. Click 'Proceed To Checkout' button
     click(driver.findElement(By.xpath("//*[text()='Proceed To Checkout']")));

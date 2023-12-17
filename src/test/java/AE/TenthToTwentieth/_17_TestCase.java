@@ -16,15 +16,15 @@ public class _17_TestCase extends TestBase {
         homePage.navigateToSite();
         // 3. Verify that home page is visible successfully
         homePage.verifyMainPage();
-       //4. Add products to cart
+       //4. Add products to cartPage
         addProductsToCart(7);
-       //5. Click 'Cart' button
+       //5. Click 'CartPage' button
         homePage.TopBarClicks(TopBars.CART);
-       //6. Verify that cart page is displayed
+       //6. Verify that cartPage page is displayed
         verifyVisibility(lShoppingCartTxt);
        //7. Click 'X' button corresponding to particular product
         click(lRemoveProductFrmCart);
-       //8. Verify that product is removed from the cart
+       //8. Verify that product is removed from the cartPage
         wait.until(ExpectedConditions.numberOfElementsToBeLessThan(By.tagName("tbody"),3));
     }
 }

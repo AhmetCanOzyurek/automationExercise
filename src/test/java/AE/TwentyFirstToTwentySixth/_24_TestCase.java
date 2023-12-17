@@ -22,7 +22,7 @@ public class _24_TestCase extends TestBase {
         homePage = new HomePage();
 //4. Add products to cart
 addProductsToCart(3);
-//5. Click 'Cart' button
+//5. Click 'CartPage' button
     homePage.TopBarClicks(TopBars.CART);
 //6. Verify that cart page is displayed
     verifyVisibility(lShoppingCartTxt);
@@ -43,7 +43,7 @@ addProductsToCart(3);
 }
 @Test(dependsOnMethods = {"newUserLogin"})
     public void verifyAdress() {
-//12.Click 'Cart' button
+//12.Click 'CartPage' button
     click(lCart);
 //13. Click 'Proceed To Checkout' button
     click(lProceedToChckout);

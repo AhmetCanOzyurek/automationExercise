@@ -26,16 +26,16 @@ public class _20_TestCase extends TestBase {
         verifyVisibility(lSearchedProductsText);
 //        7. Verify all the products related to search are visible
         verifyAllProducts(lSearchedProducts);
-//        8. Add those products to cart
+//        8. Add those products to cartPage
         addProductsToCart(7);
-//        9. Click 'Cart' button and verify that products are visible in cart
+//        9. Click 'CartPage' button and verify that products are visible in cartPage
         click(lCart);
 //        10. Click 'Signup / Login' button and submit login details
         click(lSignupLogin);
         newUserSignUp();
-//        11. Again, go to Cart page
+//        11. Again, go to CartPage page
         click(lCart);
-//        12. Verify that those products are visible in cart after login as well
+//        12. Verify that those products are visible in cartPage after login as well
         verifyAmountOfAddedProductsOnCart(7);
     }
 }

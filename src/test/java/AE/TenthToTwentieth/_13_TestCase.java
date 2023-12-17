@@ -22,11 +22,11 @@ public class _13_TestCase extends TestBase {
 verifyVisibility(lviewProduct);
        //6. Increase quantity to 4
 sendKeys(lQuantityBox, "4");
-       //7. Click 'Add to cart' button
+       //7. Click 'Add to cartPage' button
 click(lAddtoCartButtonPrdctPage);
-       //8. Click 'View Cart' button
+       //8. Click 'View CartPage' button
 click(lWievCart);
-       //9. Verify that product is displayed in cart page with exact quantity
+       //9. Verify that product is displayed in cartPage page with exact quantity
         String expectedQuantity = "4";
         String actualQuantity = driver.findElement(lCartQuantityBox).getText();
         Assert.assertEquals(expectedQuantity,actualQuantity);

@@ -20,10 +20,10 @@ public class _22_TestCase extends TestBase {
         actions.sendKeys(Keys.END);
 //        4. Verify 'RECOMMENDED ITEMS' are visible
         verifyVisibility(lRecommendItemsTxt);
-//        5. Click on 'Add To Cart' on Recommended product
+//        5. Click on 'Add To CartPage' on Recommended product
         scrollIntoWiev(lRecommendItemsTxt);
         click(lRecommendedAddToCart);
-//        6. Click on 'View Cart' button
+//        6. Click on 'View CartPage' button
         click(lWievCart);
 //        7. Verify that product is displayed in cart page
         assertItemNames("Blue Top", lBlueTop);

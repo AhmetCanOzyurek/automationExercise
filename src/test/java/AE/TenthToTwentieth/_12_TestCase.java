@@ -2,19 +2,16 @@ package AE.TenthToTwentieth;
 
 import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import Pages.Products.Products;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
-import java.util.List;
-
-import static utilities.Locators.*;
 public class _12_TestCase extends TestBase {
     @Test
-    public void AddProductsInCart(){
+    public void AddProductsInCart() {
 
         HomePage homePage = new HomePage();
+        Products products = new Products();
         // 1. Launch browser
         // 2. Navigate to url 'http://automationexercise.com'
         homePage.navigateToSite();
@@ -23,25 +20,18 @@ public class _12_TestCase extends TestBase {
         // 4. Click 'Products' button
         homePage.TopBarClicks(TopBars.PRODUCTS);
         // 5. Hover over first product and click 'Add to cartPage'
-        WebElement element = driver.findElement(lAddToCartButton);
-        scrollIntoWiev(element);
-        click(lAddToCartButton);
+        products.addFirstProductToCart();
         // 6. Click 'Continue Shopping' button
-        click(lContinueShopping);
+        products.continueAfterAdding();
         // 7. Hover over second product and click 'Add to cartPage'
-        click(lAddToCartButton2);
+        products.addSecondProductToCart();
         // 8. Click 'View CartPage' button
-        click(lWievCart);
+        products.viewCartAfterAdding();
         // 9. Verify both products are added to CartPage
-        softAssert.assertTrue(driver.findElement(By.cssSelector("#product-1")).isDisplayed());
-        softAssert.assertTrue(driver.findElement(By.cssSelector("#product-2")).isDisplayed());
+        products.verifyAddedItemsInCart(2);
         // 10. Verify their prices, quantity and total price
-        List<WebElement> cartVerifying =driver.findElements(By.cssSelector("tbody"));
+       products.verifyItemDetails("Rs.");
+       products.verifyItemDetails("1");
 
-        for (WebElement e : cartVerifying) {
-            softAssert.assertTrue(e.isDisplayed());
-        }
-
-        softAssert.assertAll();
     }
 }

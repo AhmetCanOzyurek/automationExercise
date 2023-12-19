@@ -56,10 +56,9 @@ public interface Locators {
 
 
             By lSignupLogin = By.xpath("//*[text()=' Signup / Login']");
-    By lAddToCartButton = By.xpath("(//a[@data-product-id='1'])[1]");
+    By lAddToCartButtonofFirstProduct = By.xpath("(//a[@data-product-id='1'])[1]");
     By lAddToCartButton2 = By.xpath("(//a[@data-product-id='2'])[1]");
     By lContinueShopping = By.xpath("//*[.='Continue Shopping']");
-
     By lShoppingCartTxt = By.xpath("//*[text()='Shopping CartPage']");
     By lWievCart = By.xpath("//*[text()='View CartPage']");
     By lviewProduct = By.xpath("(//*[text()='View Product'])[1]");

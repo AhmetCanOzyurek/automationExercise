@@ -10,5 +10,16 @@ By lProductDetails = By.xpath("//div[@class='product-details']");
 By lProductSearchBox = By.xpath("//*[@placeholder='Search Product']");
 By lProductSearchSubmit = By.xpath("//*[@id='submit_search']");
 By lSearchRelatedProducts = By.xpath("//div[@class='features_items']//div[@class='col-sm-4']");
+By lAddToCartButtonOfFirstProduct = By.xpath("(//a[@data-product-id='1'])[1]");
+    By lAddToCartButtonSecondProduct = By.xpath("(//a[@data-product-id='2'])[1]");
+    By lContinueShoppingAfterAddToCart = By.xpath("//*[.='Continue Shopping']");
+    By lWievCartAfterAdding = By.xpath("//*[text()='View Cart']");
+    By lviewProduct = By.xpath("(//*[text()='View Product'])[1]");
+
+    By lCartTableProductsHeaders = By.xpath("(//tr[contains(@id,product-)])[1]");
+    By lCartTableProducts1 = By.xpath("(//tr[contains(@id,product-)])[2]");
+    By lCartTableProducts2 = By.xpath("(//tr[contains(@id,product-)])[3]");
+    By lProductPageFirstItem = By.xpath("(//div[@class = 'features_items']//div[@class = 'col-sm-4'])[1]");
+    By lProductPageSecondItem = By.xpath("(//div[@class = 'features_items']//div[@class = 'col-sm-4'])[2]");
 
 }

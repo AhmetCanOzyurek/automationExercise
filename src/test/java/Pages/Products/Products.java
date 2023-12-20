@@ -85,18 +85,30 @@ public class Products extends TestBase {
         }
     }
 
-    public void verifyItemDetails(String verifiers) {
+    public void verifyItemDetails(String verifierKey, String verifierValue) {
+        //headers key
+        String[] itemHeadersArr = webelementTextToArray(lCartTableProductsHeaders);
+
+        //item details values
+        String[] firstCartItemDetailsArrays = webElementListToStrArray(lCartTableProduct1Details);
+
+        String[] secondCartItemDetailsArrays = webElementListToStrArray(lCartTableProduct2Details);
+
+        Map<String,String> firstItemMap = createMap(itemHeadersArr, firstCartItemDetailsArrays);
+        Map<String,String> secondItemMap = createMap(itemHeadersArr, secondCartItemDetailsArrays);
 
 
-        String cartFirstProductDetail = driver.findElement(lCartTableProducts1).getText();
-        String cartSecondProductDetail = driver.findElement(lCartTableProducts2).getText();
-
-        Assert.assertTrue(cartFirstProductDetail.contains(verifiers));
-        Assert.assertTrue(cartSecondProductDetail.contains(verifiers));
+        if(firstItemMap.containsKey(verifierKey)){
+            String trueValue = firstItemMap.get(verifierKey);
+            Assert.assertTrue(verifierValue.equals(trueValue));
+        }
+        if(firstItemMap.containsKey(verifierKey)){
+            String trueValue = secondItemMap.get(verifierKey);
+            Assert.assertTrue(verifierValue.equals(trueValue));
+        }
 
 
     }
-
 
 
     /**
@@ -105,8 +117,8 @@ public class Products extends TestBase {
      * @return
      */
     private static Map<String, String> createMap(String[] keys, String[] values) {
-        //  if(keys.length != values.length)
-        //   throw new IllegalArgumentException("Arrays must have the same length");
+        if (keys.length != values.length)
+            throw new IllegalArgumentException("Arrays must have the same length");
 
         Map<String, String> resultMap = new HashMap<>();
 
@@ -115,6 +127,7 @@ public class Products extends TestBase {
         }
         return resultMap;
     }
+
 
     /**
      * @param locator
@@ -127,6 +140,17 @@ public class Products extends TestBase {
 
         String[] arr = elementText.split("\\s+");
 
+        return arr;
+    }
+
+    public String[] webElementListToStrArray(By locator) {
+        List<WebElement> list = driver.findElements(locator);
+        String[] arr = new String[list.size()-1];
+
+        for (int i = 0; i < list.size()-1; i++) {
+            arr[i] = list.get(i).getText();
+        }
+        arr[0] = arr[1];
         return arr;
     }
 

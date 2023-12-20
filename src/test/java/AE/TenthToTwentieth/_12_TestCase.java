@@ -30,8 +30,9 @@ public class _12_TestCase extends TestBase {
         // 9. Verify both products are added to CartPage
         products.verifyAddedItemsInCart(2);
         // 10. Verify their prices, quantity and total price
-       products.verifyItemDetails("Rs.");
-       products.verifyItemDetails("1");
+       products.verifyItemDetails("price","Rs. 500");
+       products.verifyItemDetails("quantity", "1");
+       products.verifyItemDetails("total","Rs. 500");
 
     }
 }

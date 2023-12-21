@@ -58,5 +58,7 @@ public interface HomePageLocators {
     By lContactUs = By.xpath("(//ul[@class='nav navbar-nav']//li)[8]");
     By lTestCaseSign = By.xpath("//b[text()='Test Cases']");
 
+    By lMainPageFirstItemViewProd =By.xpath("(//*[text()='View Product'])[1]");
+
 
 }

@@ -7,8 +7,13 @@
     <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise Project.&#10;part/13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_12_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_12_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_13_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_13_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage/HomePageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage/HomePageLocators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Products/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Products/Products.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Products/ProductsLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Products/ProductsLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +99,7 @@
       <recent name="AE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG._12_TestCase.AddProductsInCart">
+  <component name="RunManager" selected="TestNG._13_TestCase">
     <configuration name="_11_TestCase" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._11_TestCase" />
       <module name="automationExercise" />
@@ -228,16 +233,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_9_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="_13_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AE.FirstToTenth.*" />
+          <option name="PATTERN" value="AE.TenthToTwentieth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="AE.FirstToTenth" />
-      <option name="MAIN_CLASS_NAME" value="AE.FirstToTenth._9_TestCase" />
+      <option name="PACKAGE_NAME" value="AE.TenthToTwentieth" />
+      <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._13_TestCase" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -268,18 +273,18 @@
       <item itemvalue="Application.deneme" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
+      <item itemvalue="TestNG._13_TestCase" />
       <item itemvalue="TestNG._12_TestCase" />
       <item itemvalue="TestNG._11_TestCase" />
       <item itemvalue="TestNG._10_TestCase" />
-      <item itemvalue="TestNG._9_TestCase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG._13_TestCase" />
         <item itemvalue="TestNG._12_TestCase" />
         <item itemvalue="Application.deneme" />
         <item itemvalue="TestNG._11_TestCase" />
         <item itemvalue="TestNG._10_TestCase" />
-        <item itemvalue="TestNG._9_TestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -654,7 +659,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702997194359</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Revisions for my automationExercise Project.&#10;part/13">
+      <option name="closed" value="true" />
+      <created>1703100676115</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1703100676115</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

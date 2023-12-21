@@ -73,8 +73,7 @@ public interface Locators {
 
     By lProductDetails = By.xpath("//div[@class = 'product-details']");
     By lQuantityBox = By.cssSelector("#quantity");
-    By lIncreaseQuantity = By.cssSelector("#product_id");
-    By lAddtoCartButtonPrdctPage = By.xpath("//button[@class ='btn btn-default cart']");
+
     By  lCartQuantityBox = By.xpath("//*[@class='cart_quantity']");
     By lNewUserSignupNameBox = By.xpath("//*[@*='signup-name']");
 By lNewUserSignupEmailBox = By.xpath("//*[@*='signup-email']");

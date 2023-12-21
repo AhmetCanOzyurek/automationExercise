@@ -67,5 +67,7 @@ public class HomePage extends TestBase {
     public void verifySubsSuccessAlert(){
         verifyVisibility(lSubsSuccessMessage);
     }
-
+    public void clickFirstViewItem(){
+        click(lMainPageFirstItemViewProd);
+    }
 }

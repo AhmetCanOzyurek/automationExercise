@@ -109,7 +109,15 @@ public class Products extends TestBase {
 
 
     }
-
+public void increaseQuantity(String increaseNumber){
+sendKeys(lQuantityBox,increaseNumber);
+}
+public void detailPageAddToCart(){
+click(lAddtoCartButtonPrdctPage);
+}
+public void verifyItemQuantity(String verifier){
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(lQuantityNumber,verifier));
+    }
 
     /**
      * @param keys

@@ -22,4 +22,8 @@ public interface ProductsLocators {
     By lProductPageFirstItem = By.xpath("(//div[@class = 'features_items']//div[@class = 'col-sm-4'])[1]");
     By lProductPageSecondItem = By.xpath("(//div[@class = 'features_items']//div[@class = 'col-sm-4'])[2]");
 
+    By lQuantityBox = By.cssSelector("#quantity");
+    By lAddtoCartButtonPrdctPage = By.xpath("//button[@class ='btn btn-default cart']");
+    By lQuantityNumber = By.xpath("(//tr)[2]//td[4]");
+
 }

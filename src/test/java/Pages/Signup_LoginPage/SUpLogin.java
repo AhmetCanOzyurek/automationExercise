@@ -7,7 +7,18 @@ import org.openqa.selenium.support.ui.Select;
 import utilities.TestBase;
 
 import static Pages.Signup_LoginPage.SUpLogiLocators.*;
-import static utilities.Locators.lLoggedAsUsernameTxt;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lAccountCreatedText;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lCheckBox1;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lCheckBox2;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lContinueAfterAccountCreated;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lCountryDDM;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lGenderRadioMr;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lLoggedAsUsernameTxt;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lNewUserSignupButton;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lNewUserSignupEmailBox;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lNewUserSignupNameBox;
+import static Pages.Signup_LoginPage.SUpLogiLocators.lPasswordBox;
+import static utilities.Locators.*;
 
 public class SUpLogin extends TestBase {
 
@@ -90,5 +101,18 @@ public class SUpLogin extends TestBase {
         sendKeys(lNewUserSignupEmailBox, myUserMail);
         click(lNewUserSignupButton);
     }
+    public void verifyAdressDetails(){
 
+        WebElement adressBox = driver.findElement(By.cssSelector("#address_delivery"));
+        String actualAdressStr = adressBox.getText();
+        WebElement billingAdressBox = driver.findElement(lBillingAdressDetailBox);
+        String actualBillingAdressStr = billingAdressBox.getText();
+
+
+        softAssert.assertTrue(actualAdressStr.contains(fakerLocation));
+        softAssert.assertTrue(actualBillingAdressStr.contains(fakerLocation));
+    }
+    public void verifyAccountDeleted(){
+        verifyVisibility(lAccountDeletedTxt);
+    }
 }

@@ -59,6 +59,6 @@ public interface HomePageLocators {
     By lTestCaseSign = By.xpath("//b[text()='Test Cases']");
 
     By lMainPageFirstItemViewProd =By.xpath("(//*[text()='View Product'])[1]");
-
+    By lContinueShopping = By.xpath("//*[.='Continue Shopping']");
 
 }

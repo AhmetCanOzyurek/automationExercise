@@ -27,16 +27,14 @@ public class _12_TestCase extends TestBase {
         // 4. Click 'Products' button
         homePage.TopBarClicks(TopBars.PRODUCTS);
         // 5. Hover over first product and click 'Add to cartPage'
-        products.addFirstProductToCart();
         // 6. Click 'Continue Shopping' button
-        products.continueAfterAdding();
         // 7. Hover over second product and click 'Add to cartPage'
-        products.addSecondProductToCart();
-
+        homePage.addProductsToCart(2);
+        products.viewCartAfterAdding();
     }
+
     @Test(dependsOnMethods = "AddProductsInCart")
-    public void VerifyItemDetails()
-    {
+    public void VerifyItemDetails() {
         // 8. Click 'View CartPage' button
         products.viewCartAfterAdding();
         // 9. Verify both products are added to CartPage

@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise Project.&#10;part/13">
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise Project.&#10;part/14">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_12_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_12_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_13_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_13_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_14_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_14_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CartPage/CartLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage/CartLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CartPage/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage/HomePageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage/HomePageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Products/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Products/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Products/ProductsLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Products/ProductsLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Signup_LoginPage/SUpLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Signup_LoginPage/SUpLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +74,7 @@
     &quot;TestNG._11_TestCase.executor&quot;: &quot;Run&quot;,
     &quot;TestNG._12_TestCase.AddProductsInCart.executor&quot;: &quot;Run&quot;,
     &quot;TestNG._12_TestCase.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._13_TestCase.executor&quot;: &quot;Run&quot;,
     &quot;TestNG._3_TestCase.executor&quot;: &quot;Run&quot;,
     &quot;TestNG._8_TestCasse.executor&quot;: &quot;Run&quot;,
     &quot;TestNG._9_TestCase.executor&quot;: &quot;Debug&quot;,
@@ -667,7 +667,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703100676115</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Revisions for my automationExercise Project.&#10;part/14">
+      <option name="closed" value="true" />
+      <created>1703161653236</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1703161653236</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -682,7 +690,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SearchProductsAndVerifyCartAfterLogin/20.TestCase" />
     <MESSAGE value="Arrangments" />
     <MESSAGE value="Add review on product/ 21.TestCase" />
     <MESSAGE value="Add to cart from Recommended items/ 22.TestCase" />
@@ -707,7 +714,8 @@
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/11" />
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/12" />
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise Project.&#10;part/13" />
+    <MESSAGE value="Revisions for my automationExercise Project.&#10;part/14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise Project.&#10;part/14" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

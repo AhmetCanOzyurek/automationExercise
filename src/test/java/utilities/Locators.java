@@ -3,8 +3,6 @@ package utilities;
 import org.openqa.selenium.By;
 
 public interface Locators {
-    String url = "https://automationexercise.com/";
-    By lmainPage = By.xpath("//div[@class='logo pull-left']");
     //Main Page
         //SideBar
             By lCategoryLeftSide = By.xpath("//h2[text()='Category']");
@@ -16,8 +14,6 @@ public interface Locators {
             By lSubsTextDownPage = By.xpath("//*[text()='Subscription']");
             By lUpwardArrow = By.cssSelector("#scrollUp");
             By lFullFledgedtxt = By.xpath("(//*[contains(text(),'Full-Fledged')])[1]");
-            By lAddsDownButton = By.cssSelector("#dropShadowTop");
-            By lShadowRootAdds = By.xpath("//div[@class='grippy-host']");
 
             By lRecommendItemsTxt = By.xpath("//*[text()='recommended items']");
                 //RecommendedItems
@@ -45,7 +41,6 @@ public interface Locators {
             By lDeleteAccount = By.xpath("//*[text()=' Delete Account']");
             //accountDeleted
                 By lAccountDeletedTxt = By.xpath("//*[text()='Account Deleted!']");
-            By lProductsTopBar = By.xpath("//*[text()=' Products']");
                 //product page
                 By lProducts = By.xpath("//div[@class='features_items']//div[@class='col-sm-4']");
                 By lSearchProductBox =By.cssSelector("#search_product");
@@ -56,8 +51,6 @@ public interface Locators {
 
 
             By lSignupLogin = By.xpath("//*[text()=' Signup / Login']");
-    By lAddToCartButtonofFirstProduct = By.xpath("(//a[@data-product-id='1'])[1]");
-    By lAddToCartButton2 = By.xpath("(//a[@data-product-id='2'])[1]");
     By lContinueShopping = By.xpath("//*[.='Continue Shopping']");
     By lShoppingCartTxt = By.xpath("//*[text()='Shopping CartPage']");
     By lWievCart = By.xpath("//*[text()='View CartPage']");
@@ -71,10 +64,7 @@ public interface Locators {
             By lReviewSubmit = By.cssSelector("#button-review");
             By lReviewSuccessTxt = By.cssSelector("#review-section");
 
-    By lProductDetails = By.xpath("//div[@class = 'product-details']");
-    By lQuantityBox = By.cssSelector("#quantity");
 
-    By  lCartQuantityBox = By.xpath("//*[@class='cart_quantity']");
     By lNewUserSignupNameBox = By.xpath("//*[@*='signup-name']");
 By lNewUserSignupEmailBox = By.xpath("//*[@*='signup-email']");
 By lNewUserSignupButton = By.xpath("//*[text()='Signup']");

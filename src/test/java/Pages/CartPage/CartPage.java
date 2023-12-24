@@ -36,7 +36,7 @@ public class CartPage extends TestBase {
     public void clickRegisterLoginAfterProceed(){
         click(lRegisterLoginChckout);
     }
-    public void typeAComment(String comment){
+    public void writeADescription(String comment){
       wait.until(ExpectedConditions.elementToBeClickable(lDescription)).sendKeys(comment);
       click(lPlaceOrder);
     }
@@ -51,10 +51,9 @@ public class CartPage extends TestBase {
         bekle(3);
     }
     public void verifyYourOrderHasBeenPlaced(){
-        driver.navigate().back();
+
         verifyVisibility(lOrderPlacedTxt);
-        click(By.cssSelector("#submit"));
-        bekle(3);
+
         click(By.xpath("//*[text()='Continue']"));
     }
 }

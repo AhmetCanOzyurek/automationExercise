@@ -86,7 +86,7 @@ By lPlaceOrder = By.xpath("//*[text()='Place Order']");
 //Payment
     By lNameOnCard = By.xpath("//*[@name='name_on_card']");
 
-    By lOrderPlacedTxt = By.xpath("//*[.='Order Placed!']");
+    By lOrderPlacedTxt = By.xpath("//*[text()='Order Placed!']");
 //Products
     By lBlueTop = By.xpath("//*[text()='Blue Top']");
 

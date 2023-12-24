@@ -72,7 +72,7 @@ public void scrollDownBottom(){
     public void scrollUp() {
         test3.info("scroll up to top test initialized");
 //6. Scroll up page to top
-        scrollIntoWiev(lmainPage);
+//        scrollIntoWiev(lmainPage);
 //7. Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
         try {
             verifyVisibility(lFullFledgedtxt);

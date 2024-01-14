@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise TestNG Project.&#10;part/15">
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise TestNG Project.&#10;part/16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_14_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_14_TestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_15_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_15_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TwentyFirstToTwentySixth/_26_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TwentyFirstToTwentySixth/_26_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CartPage/CartLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage/CartLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CartPage/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_16_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_16_TestCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +73,7 @@
     "TestNG._14_TestCase.executor": "Run",
     "TestNG._15_TestCase.executor": "Run",
     "TestNG._15_TestCase.placeOrder.executor": "Run",
+    "TestNG._16_TestCase.executor": "Run",
     "TestNG._1_Case.executor": "Run",
     "TestNG._2_CaseAX.executor": "Run",
     "TestNG._3_TestCase.executor": "Run",
@@ -103,7 +100,7 @@
       <recent name="AE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG._15_TestCase.placeOrder">
+  <component name="RunManager" selected="TestNG._16_TestCase">
     <configuration name="_11_TestCase" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._11_TestCase" />
       <module name="automationExercise" />
@@ -225,16 +222,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_1_Case" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="_16_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AE.FirstToTenth.*" />
+          <option name="PATTERN" value="AE.TenthToTwentieth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="AE.FirstToTenth" />
-      <option name="MAIN_CLASS_NAME" value="AE.FirstToTenth._1_Case" />
+      <option name="PACKAGE_NAME" value="AE.TenthToTwentieth" />
+      <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._16_TestCase" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -281,26 +278,26 @@
       <item itemvalue="Application._11_TestCase" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
+      <item itemvalue="TestNG._16_TestCase" />
       <item itemvalue="TestNG._14_TestCase" />
       <item itemvalue="TestNG._15_TestCase" />
       <item itemvalue="TestNG._15_TestCase.placeOrder" />
-      <item itemvalue="TestNG._1_Case" />
       <item itemvalue="TestNG._2_CaseAX" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG._15_TestCase.placeOrder" />
+        <item itemvalue="TestNG._16_TestCase" />
         <item itemvalue="TestNG._15_TestCase" />
+        <item itemvalue="TestNG._15_TestCase.placeOrder" />
         <item itemvalue="TestNG._14_TestCase" />
         <item itemvalue="TestNG._2_CaseAX" />
-        <item itemvalue="TestNG._1_Case" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-20.0.2-azul-20.0.2-8336523bb0d9-87528728" />
+        <option value="jdk-20.0.2-azul-20.0.2-e1d2075fd9a7-278595b0" />
       </set>
     </attachedChunks>
   </component>
@@ -692,7 +689,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703270658344</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Revisions for my automationExercise TestNG Project.&#10;part/16">
+      <option name="closed" value="true" />
+      <created>1703431809818</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1703431809818</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -707,7 +712,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add review on product/ 21.TestCase" />
     <MESSAGE value="Add to cart from Recommended items/ 22.TestCase" />
     <MESSAGE value="Verify address details in checkout page/ 23.TestCase" />
     <MESSAGE value="Download Invoice after purchase order/ 24.TestCase" />
@@ -732,7 +736,8 @@
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/13" />
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/14" />
     <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/15" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise TestNG Project.&#10;part/15" />
+    <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/16" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise TestNG Project.&#10;part/16" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

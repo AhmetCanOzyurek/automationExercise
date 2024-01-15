@@ -1,5 +1,10 @@
 package utilities;
 
+import Pages.CartPage.CartPage;
+import Pages.ContactUs.ContactUs;
+import Pages.HomePage.HomePage;
+import Pages.Products.Products;
+import Pages.Signup_LoginPage.SUpLogin;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -19,6 +24,11 @@ import java.util.List;
 import static utilities.Locators.*;
 
 public class TestBase {
+    public static HomePage homePage;
+    public static CartPage cartPage ;
+    public static SUpLogin sUpLogin;
+    public static Products products;
+    public static ContactUs contactUs;
     public static WebDriver driver;
     public static WebDriverWait wait;
     public static SoftAssert softAssert;
@@ -38,7 +48,16 @@ public class TestBase {
         wait  = new WebDriverWait(driver, Duration.ofSeconds(10));
         jse = (JavascriptExecutor) driver;
         actions = new Actions(driver);
-
+    homePage = new HomePage();
+    cartPage = new CartPage();
+    sUpLogin = new SUpLogin();
+    products = new Products();
+    contactUs = new ContactUs();
+    // 1. Launch browser
+    // 2. Navigate to url 'http://automationexercise.com'
+    homePage.navigateToSite();
+    // 3. Verify that home page is visible successfully
+    homePage.verifyMainPage();
     }
 
 

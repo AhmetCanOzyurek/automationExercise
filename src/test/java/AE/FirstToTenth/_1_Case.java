@@ -2,7 +2,6 @@ package AE.FirstToTenth;
 
 import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
-import Pages.Signup_LoginPage.SUpLogin;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -13,7 +12,8 @@ import org.testng.annotations.Test;
 import utilities.TestBase;
 import utility.Driver;
 
-import static utilities.Locators.*;
+import static utilities.Locators.lAccountDeletedTxt;
+import static utilities.Locators.lContinueAfterAccountCreated;
 
 public class _1_Case extends TestBase {
     ExtentSparkReporter html;
@@ -22,12 +22,9 @@ public class _1_Case extends TestBase {
     ExtentTest test2;
     ExtentTest test3;
     ExtentTest test4;
-    HomePage homePage;
-    SUpLogin sUpLogin;
+
     @BeforeTest
     public void setUp(){
-        homePage = new HomePage();
-        sUpLogin = new SUpLogin();
 
         html = new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport.html");
         extentReport =  new ExtentReports();

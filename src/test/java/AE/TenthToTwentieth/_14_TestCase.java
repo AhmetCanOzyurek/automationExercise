@@ -1,27 +1,10 @@
 package AE.TenthToTwentieth;
 
-import Pages.CartPage.CartPage;
-import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
-import Pages.Signup_LoginPage.SUpLogin;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 public class _14_TestCase extends TestBase {
-  HomePage homePage;
-  CartPage cartPage ;
-  SUpLogin sUpLogin;
-  @BeforeTest
-  public void initial(){
-    homePage = new HomePage();
-    cartPage = new CartPage();
-    sUpLogin = new SUpLogin();
-    // 1. Launch browser
-    // 2. Navigate to url 'http://automationexercise.com'
-    homePage.navigateToSite();
-    // 3. Verify that home page is visible successfully
-    homePage.verifyMainPage();
-  }
+
     @Test
     public void addProductsAndVerifyCartPAge() {
 //        4. Add products to cartPage

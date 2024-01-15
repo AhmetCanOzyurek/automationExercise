@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise TestNG Project.&#10;part/16">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_15_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_15_TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_16_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_16_TestCase.java" afterDir="false" />
-    </list>
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise TestNG Project.&#10;part/18" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -312,14 +308,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696351700462</updated>
-    </task>
-    <task id="LOCAL-00001" summary="AutomationExerciseTestCase1">
-      <option name="closed" value="true" />
-      <created>1697820387482</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1697820387482</updated>
     </task>
     <task id="LOCAL-00002" summary="AutomationExerciseTestCase2">
       <option name="closed" value="true" />
@@ -697,7 +685,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703431809818</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Revisions for my automationExercise TestNG Project.&#10;part/17">
+      <option name="closed" value="true" />
+      <created>1705241903144</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1705241903144</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Revisions for my automationExercise TestNG Project.&#10;part/18">
+      <option name="closed" value="true" />
+      <created>1705241967693</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1705241967693</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -712,8 +716,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add to cart from Recommended items/ 22.TestCase" />
-    <MESSAGE value="Verify address details in checkout page/ 23.TestCase" />
     <MESSAGE value="Download Invoice after purchase order/ 24.TestCase" />
     <MESSAGE value="Verify Scroll Up using 'Arrow' button and Scroll Down functionality/ 25.TestCase" />
     <MESSAGE value="Verify Scroll Up without 'Arrow' button and Scroll Down functionality/ 26.TestCase&#10;&#10;Last testCase, farewell automation exercise." />
@@ -737,7 +739,9 @@
     <MESSAGE value="Revisions for my automationExercise Project.&#10;part/14" />
     <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/15" />
     <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/16" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise TestNG Project.&#10;part/16" />
+    <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/17" />
+    <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/18" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise TestNG Project.&#10;part/18" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

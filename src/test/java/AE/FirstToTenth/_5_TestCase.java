@@ -1,21 +1,13 @@
 package AE.FirstToTenth;
 
-import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
-import Pages.Signup_LoginPage.SUpLogin;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utilities.TestBase;
-import static Pages.Signup_LoginPage.SUpLogiLocators.*;
+
+import static Pages.Signup_LoginPage.SUpLogiLocators.lAlreadyExistTxt;
 
 public class _5_TestCase extends TestBase {
-    HomePage homePage;
-    SUpLogin sUpLogin;
-    @BeforeTest
-    public void setup(){
-        homePage = new HomePage();
-        sUpLogin = new SUpLogin();
-    }
+
     @Test
     public void initial(){
         // 1. Launch browser

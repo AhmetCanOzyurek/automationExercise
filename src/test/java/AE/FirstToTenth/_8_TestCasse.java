@@ -1,21 +1,12 @@
 package AE.FirstToTenth;
 
-import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
-import Pages.Products.Products;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
 public class _8_TestCasse extends TestBase {
-    HomePage homePage;
-    Products products;
-    @BeforeTest
-    public void setup(){
-        homePage = new HomePage();
-        products = new Products();
-    }
+
     @Test
     public void initial(){
         // 1. Launch browser

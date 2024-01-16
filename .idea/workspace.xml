@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise TestNG Project.&#10;part/18" />
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise TestNG Project.&#10;part/19" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,36 +55,36 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.deneme.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG._10_TestCase.executor": "Run",
-    "TestNG._11_TestCase.executor": "Run",
-    "TestNG._12_TestCase.AddProductsInCart.executor": "Run",
-    "TestNG._12_TestCase.executor": "Run",
-    "TestNG._13_TestCase.executor": "Run",
-    "TestNG._14_TestCase.executor": "Run",
-    "TestNG._15_TestCase.executor": "Run",
-    "TestNG._15_TestCase.placeOrder.executor": "Run",
-    "TestNG._16_TestCase.executor": "Run",
-    "TestNG._1_Case.executor": "Run",
-    "TestNG._2_CaseAX.executor": "Run",
-    "TestNG._3_TestCase.executor": "Run",
-    "TestNG._8_TestCasse.executor": "Run",
-    "TestNG._9_TestCase.executor": "Debug",
-    "TestNG._9_TestCase.initial.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/enesoncu/IdeaProjects/automationExercise",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.deneme.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG._10_TestCase.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._11_TestCase.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._12_TestCase.AddProductsInCart.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._12_TestCase.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._13_TestCase.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._14_TestCase.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._15_TestCase.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._15_TestCase.placeOrder.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._16_TestCase.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._1_Case.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._2_CaseAX.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._3_TestCase.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._8_TestCasse.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG._9_TestCase.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG._9_TestCase.initial.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/enesoncu/IdeaProjects/automationExercise&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="AE" />
@@ -308,14 +308,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696351700462</updated>
-    </task>
-    <task id="LOCAL-00002" summary="AutomationExerciseTestCase2">
-      <option name="closed" value="true" />
-      <created>1697969337046</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1697969337046</updated>
     </task>
     <task id="LOCAL-00003" summary="AutomationExerciseTestCase3/IncorrectUserCredentialTest">
       <option name="closed" value="true" />
@@ -701,7 +693,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705241967693</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Revisions for my automationExercise TestNG Project.&#10;part/19">
+      <option name="closed" value="true" />
+      <created>1705324499856</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1705324499856</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -716,7 +716,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Download Invoice after purchase order/ 24.TestCase" />
     <MESSAGE value="Verify Scroll Up using 'Arrow' button and Scroll Down functionality/ 25.TestCase" />
     <MESSAGE value="Verify Scroll Up without 'Arrow' button and Scroll Down functionality/ 26.TestCase&#10;&#10;Last testCase, farewell automation exercise." />
     <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project." />
@@ -741,7 +740,8 @@
     <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/16" />
     <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/17" />
     <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/18" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise TestNG Project.&#10;part/18" />
+    <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/19" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise TestNG Project.&#10;part/19" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

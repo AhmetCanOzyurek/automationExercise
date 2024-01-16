@@ -25,5 +25,9 @@ public interface ProductsLocators {
     By lQuantityBox = By.cssSelector("#quantity");
     By lAddtoCartButtonPrdctPage = By.xpath("//button[@class ='btn btn-default cart']");
     By lQuantityNumber = By.xpath("(//tr)[2]//td[4]");
+    By lBrands = By.xpath("//*[text()='Brands']");
+    By lPoloBrandPageTxt = By.xpath("(//*[text()='Polo'])[1]");
+    By lBrandText = By.xpath("//li[@class='active']");
+
 
 }

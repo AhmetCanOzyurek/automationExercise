@@ -1,38 +1,28 @@
 
 package AE.TenthToTwentieth;
 
-import Pages.HomePage.HomePage;
-import org.openqa.selenium.WebElement;
+import Pages.HomePage.TopBars;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
-import static utilities.Locators.*;
-public class _19_TestCase extends TestBase{
+public class _19_TestCase extends TestBase {
     @Test
-    public void viewAndCartBrandProducts(){
-        HomePage homePage = new HomePage();
-        // 1. Launch browser
-        // 2. Navigate to url 'http://automationexercise.com'
-        homePage.navigateToSite();
-        // 3. Verify that home page is visible successfully
-        homePage.verifyMainPage();
+    public void verifyProductPage() {
 //        3. Click on 'Products' button
-        click(lProducts);
+        homePage.TopBarClicks(TopBars.PRODUCTS);
 //        4. Verify that Brands are visible on left side bar
-        verifyVisibility(lBrands);
+        products.verifySideBrandBar();
 //        5. Click on any brand name
-        WebElement ePoloBrand = driver.findElement(lPoloBrand);
-jse.executeScript("arguments[0].scrollIntoView();",ePoloBrand);
-        click(ePoloBrand);
-
+        products.clickABrand("Polo");
 //        6. Verify that user is navigated to brand page and brand products are displayed
-
-        verifyVisibility(lPoloBrandPageTxt);
-//        7. On left side bar, click on any other brand link
-        WebElement eHmBrand = driver.findElement(lHMbrand);
-        click(eHmBrand);
-//        8. Verify that user is navigated to that brand page and can see products
-        verifyVisibility(lHmBrandPageTxt);
+        products.verifyBrandPage();
     }
 
+    @Test(dependsOnMethods = "verifyProductPage")
+    public void verifyBrands() {
+//        7. On left side bar click on any other brand link
+        products.clickABrand("H&M");
+//        8. Verify that user is navigated to that brand page and can see products
+        products.verifyBrandPage();
+    }
 }

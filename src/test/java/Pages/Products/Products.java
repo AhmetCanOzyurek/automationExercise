@@ -162,4 +162,16 @@ public void verifyItemQuantity(String verifier){
         return arr;
     }
 
+    public void verifySideBrandBar(){
+        verifyVisibility(lBrands);
+    }
+    public void clickABrand(String brandName){
+        String dynamicXpath= "//a[contains(.,'"+brandName+"')]";
+        By locator = By.xpath(dynamicXpath);
+        click(locator);
+    }
+    public void verifyBrandPage(){
+        verifyVisibility(lBrandText);
+    }
+
 }

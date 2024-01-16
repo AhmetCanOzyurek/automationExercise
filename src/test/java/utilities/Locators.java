@@ -25,7 +25,7 @@ public interface Locators {
                             By lMenTshirtPageTxt = By.xpath("//*[contains(text(),'Men > Tshirts')]");
             By lBrands = By.xpath("//*[text()='Brands']");
                 By lPoloBrand = By.cssSelector("ul li a[href = '/brand_products/Polo']");
-                    By lPoloBrandPageTxt = By.xpath("(//*[text()='Polo'])[1]");
+                    By lBrandText = By.xpath("//li[@class='active']");
                 By lHMbrand = By.cssSelector("ul li a[href = '/brand_products/H&M']");
                     By lHmBrandPageTxt = By.xpath("//*[text()='Brand - H&M Products']");
         //TopBar

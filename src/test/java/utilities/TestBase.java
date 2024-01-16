@@ -62,6 +62,7 @@ public class TestBase {
 
 
     public void click(By locator){
+    scrollIntoWiev(locator);
     WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
     element.click();
     }

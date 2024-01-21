@@ -16,7 +16,7 @@ public class _23_TestCase extends TestBase {
         // 3. Verify that home page is visible successfully
         homePage.verifyMainPage();
 //        4. Click 'Signup / Login' button
-        homePage.TopBarClicks(TopBars.SIGNUP_LOGIN);
+        TopBarClicks(TopBars.SIGNUP_LOGIN);
 //        5. Fill all details in Signup and create account
         newUserSignUp();
 //        6. Verify 'ACCOUNT CREATED!' and click 'Continue' button

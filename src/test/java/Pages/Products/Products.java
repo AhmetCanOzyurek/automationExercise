@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 import static Pages.Products.ProductsLocators.*;
+import static utilities.Locators.lProductsInCart;
 
 public class Products extends TestBase {
 
@@ -59,6 +60,9 @@ public class Products extends TestBase {
         sendKeys(lProductSearchBox, productName);
         click(lProductSearchSubmit);
     }
+    public void verifyAmountOfAddedProductsOnCart(int numberOfProductToAssert){
+        wait.until(ExpectedConditions.numberOfElementsToBe(lProductsInCart,numberOfProductToAssert));
+    }
 
     public void addFirstProductToCart() {
         scrollIntoWiev(lAddToCartButtonOfFirstProduct);
@@ -94,29 +98,32 @@ public class Products extends TestBase {
 
         String[] secondCartItemDetailsArrays = webElementListToStrArray(lCartTableProduct2Details);
 
-        Map<String,String> firstItemMap = createMap(itemHeadersArr, firstCartItemDetailsArrays);
-        Map<String,String> secondItemMap = createMap(itemHeadersArr, secondCartItemDetailsArrays);
+        Map<String, String> firstItemMap = createMap(itemHeadersArr, firstCartItemDetailsArrays);
+        Map<String, String> secondItemMap = createMap(itemHeadersArr, secondCartItemDetailsArrays);
 
 
-        if(firstItemMap.containsKey(verifierKey)){
+        if (firstItemMap.containsKey(verifierKey)) {
             String trueValue = firstItemMap.get(verifierKey);
             Assert.assertTrue(verifierValue.equals(trueValue));
         }
-        if(firstItemMap.containsKey(verifierKey)){
+        if (firstItemMap.containsKey(verifierKey)) {
             String trueValue = secondItemMap.get(verifierKey);
             Assert.assertTrue(verifierValue.equals(trueValue));
         }
 
 
     }
-public void increaseQuantity(String increaseNumber){
-sendKeys(lQuantityBox,increaseNumber);
-}
-public void detailPageAddToCart(){
-click(lAddtoCartButtonPrdctPage);
-}
-public void verifyItemQuantity(String verifier){
-        wait.until(ExpectedConditions.textToBePresentInElementLocated(lQuantityNumber,verifier));
+
+    public void increaseQuantity(String increaseNumber) {
+        sendKeys(lQuantityBox, increaseNumber);
+    }
+
+    public void detailPageAddToCart() {
+        click(lAddtoCartButtonPrdctPage);
+    }
+
+    public void verifyItemQuantity(String verifier) {
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(lQuantityNumber, verifier));
     }
 
     /**
@@ -153,24 +160,26 @@ public void verifyItemQuantity(String verifier){
 
     public String[] webElementListToStrArray(By locator) {
         List<WebElement> list = driver.findElements(locator);
-        String[] arr = new String[list.size()-1];
+        String[] arr = new String[list.size() - 1];
 
-        for (int i = 0; i < list.size()-1; i++) {
+        for (int i = 0; i < list.size() - 1; i++) {
             arr[i] = list.get(i).getText();
         }
         arr[0] = arr[1];
         return arr;
     }
 
-    public void verifySideBrandBar(){
+    public void verifySideBrandBar() {
         verifyVisibility(lBrands);
     }
-    public void clickABrand(String brandName){
-        String dynamicXpath= "//a[contains(.,'"+brandName+"')]";
+
+    public void clickABrand(String brandName) {
+        String dynamicXpath = "//a[contains(.,'" + brandName + "')]";
         By locator = By.xpath(dynamicXpath);
         click(locator);
     }
-    public void verifyBrandPage(){
+
+    public void verifyBrandPage() {
         verifyVisibility(lBrandText);
     }
 

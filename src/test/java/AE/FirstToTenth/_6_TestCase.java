@@ -17,7 +17,7 @@ public class _6_TestCase extends TestBase {
     @Test(dependsOnMethods = {"initial"})
     public void contactUsFrom() {
         // 4. Click on 'Contact Us' button
-        homePage.TopBarClicks(TopBars.CONTACT_US);
+        TopBarClicks(TopBars.CONTACT_US);
         // 5. Verify 'GET IN TOUCH' is visible
         contactUs.verifyGetInTouch();
         // 6. Enter name, email, subject and message
@@ -34,7 +34,7 @@ public class _6_TestCase extends TestBase {
        // 10. Verify success message 'Success! Your details have been submitted successfully.' is visible
         contactUs.verifySuccessText();
        // 11. Click 'Home' button and verify that landed to home page successfully
-     homePage.TopBarClicks(TopBars.HOME);
+     TopBarClicks(TopBars.HOME);
         homePage.verifyMainPage();
     }
 }

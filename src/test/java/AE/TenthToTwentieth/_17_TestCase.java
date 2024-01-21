@@ -17,7 +17,7 @@ public class _17_TestCase extends TestBase {
     @Test(dependsOnMethods = "addProductsToCartPage")
     public void verifyProductsInCartPage() {
         //5. Click 'CartPage' button
-        homePage.TopBarClicks(TopBars.CART);
+        TopBarClicks(TopBars.CART);
         //6. Verify that cartPage page is displayed
         verifyVisibility(lShoppingCartTxt);
     }

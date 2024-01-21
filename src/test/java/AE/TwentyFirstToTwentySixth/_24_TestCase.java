@@ -23,7 +23,7 @@ public class _24_TestCase extends TestBase {
 //4. Add products to cart
 addProductsToCart(3);
 //5. Click 'CartPage' button
-    homePage.TopBarClicks(TopBars.CART);
+    TopBarClicks(TopBars.CART);
 //6. Verify that cart page is displayed
     verifyVisibility(lShoppingCartTxt);
 }

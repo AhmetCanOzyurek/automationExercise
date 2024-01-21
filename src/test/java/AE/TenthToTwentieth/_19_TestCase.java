@@ -9,7 +9,7 @@ public class _19_TestCase extends TestBase {
     @Test
     public void verifyProductPage() {
 //        3. Click on 'Products' button
-        homePage.TopBarClicks(TopBars.PRODUCTS);
+        TopBarClicks(TopBars.PRODUCTS);
 //        4. Verify that Brands are visible on left side bar
         products.verifySideBrandBar();
 //        5. Click on any brand name

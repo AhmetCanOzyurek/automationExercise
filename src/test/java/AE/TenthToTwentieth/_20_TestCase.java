@@ -1,41 +1,49 @@
 package AE.TenthToTwentieth;
 
-import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
-import static utilities.Locators.*;
-
 public class _20_TestCase extends TestBase {
+    int productNumber = 7;
     @Test
-    public void searchProductsAndVerifyCartAfterLogin(){
-        HomePage homePage = new HomePage();
-        // 1. Launch browser
-        // 2. Navigate to url 'http://automationexercise.com'
-        homePage.navigateToSite();
-        // 3. Verify that home page is visible successfully
-        homePage.verifyMainPage();
+    public void clickAndVerifyProductPage() {
 //        3. Click on 'Products' button
-        homePage.TopBarClicks(TopBars.PRODUCTS);
+        TopBarClicks(TopBars.PRODUCTS);
 //        4. Verify user is navigated to ALL PRODUCTS page successfully
-        verifyAllProducts(lProducts);
+        products.verifyAllProductsTxt();
+    }
+    @Test
+    public void searchProducts(){
 //        5. Enter product name in search input and click search button
-        searchAProductOnProductPage("Blue");
+        products.productSearching("Blue");
 //        6. Verify 'SEARCHED PRODUCTS' is visible
-        verifyVisibility(lSearchedProductsText);
+        products.veriyfSearchedProducts();
 //        7. Verify all the products related to search are visible
-        verifyAllProducts(lSearchedProducts);
+        products.verifySearchRelatedProducts("Blue");
+    }
+    @Test
+    public void addProductsToCart() {
 //        8. Add those products to cartPage
-        addProductsToCart(7);
+        homePage.addProductsToCart(productNumber);
+    }
+    @Test
+    public void clickCartPageAndVerify() {
 //        9. Click 'CartPage' button and verify that products are visible in cartPage
-        click(lCart);
+        TopBarClicks(TopBars.CART);
+        cartPage.verifyCartPage();
+    }
+    @Test
+    public void signUp(){
 //        10. Click 'Signup / Login' button and submit login details
-        click(lSignupLogin);
-        newUserSignUp();
+        TopBarClicks(TopBars.SIGNUP_LOGIN);
+        sUpLogin.newUserSignUp();
+    }
+    @Test
+    public void andVerifyProductsNumberIsSame(){
 //        11. Again, go to CartPage page
-        click(lCart);
+        TopBarClicks(TopBars.CART);
 //        12. Verify that those products are visible in cartPage after login as well
-        verifyAmountOfAddedProductsOnCart(7);
+        products.verifyAmountOfAddedProductsOnCart(productNumber);
     }
 }

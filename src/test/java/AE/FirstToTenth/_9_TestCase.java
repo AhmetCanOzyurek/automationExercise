@@ -16,7 +16,7 @@ public class _9_TestCase extends TestBase {
     @Test(dependsOnMethods = {"initial"})
     public void verifyAllProductsTest() {
         // 4. Click on 'Products' button
-        homePage.TopBarClicks(TopBars.PRODUCTS);
+        TopBarClicks(TopBars.PRODUCTS);
         // 5. Verify user is navigated to ALL PRODUCTS page successfully
         products.verifyAllProductsTxt();
     }

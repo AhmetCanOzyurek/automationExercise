@@ -11,7 +11,7 @@ public class _4_TestCAse extends TestBase {
     @Test(dependsOnMethods = {"initial"})
     public void loginTest() {
         //4. Click on 'Signup / Login' button
-        homePage.TopBarClicks(TopBars.SIGNUP_LOGIN);
+        TopBarClicks(TopBars.SIGNUP_LOGIN);
         //5. Verify 'Login to your account' is visible
         //6. Enter correct email address and password
         //7. Click 'login' button
@@ -22,7 +22,7 @@ public class _4_TestCAse extends TestBase {
     @Test(dependsOnMethods = {"loginTest"})
     public void logoutTest() {
         //9. Click 'Logout' button
-        homePage.TopBarClicks(TopBars.LOGOUT);
+        TopBarClicks(TopBars.LOGOUT);
         //10. Verify that user is navigated to login page
         verifyVisibility(lLoginTxt);
     }

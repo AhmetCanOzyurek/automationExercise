@@ -10,7 +10,7 @@ public class _14_TestCase extends TestBase {
 //        4. Add products to cartPage
         homePage.addProductsToCart(3);
 //        5. Click 'CartPage' button
-        homePage.TopBarClicks(TopBars.CART);
+        TopBarClicks(TopBars.CART);
 //        6. Verify that cartPage page is displayed
         cartPage.verifyCartPage();
 //        7. Click Proceed To Checkout
@@ -30,7 +30,7 @@ public class _14_TestCase extends TestBase {
     @Test(dependsOnMethods = "proceedAndCheckout")
     public void clickCartPageAndVerifyLoggedIn() {
 //        12.Click 'CartPage' button
-        homePage.TopBarClicks(TopBars.CART);
+        TopBarClicks(TopBars.CART);
 //        13. Click 'Proceed To Checkout' button
         cartPage.clickProceedToCheckOut();
 //        14. Verify Address Details and Review Your Order
@@ -52,7 +52,7 @@ public class _14_TestCase extends TestBase {
     @Test(dependsOnMethods = "EnterCardDetailsAndPlaceOrder")
     public void deleteAccount(){
 //       19. Click 'Delete Account' button
-        homePage.TopBarClicks(TopBars.DELETE_ACCOUNT);
+        TopBarClicks(TopBars.DELETE_ACCOUNT);
 //        20. Verify 'ACCOUNT DELETED!' and click 'Continue' button
         sUpLogin.verifyAccountDeleted();
     }

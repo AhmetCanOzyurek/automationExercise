@@ -17,7 +17,7 @@ public class _3_TestCase extends TestBase {
     @Test(priority = 2)
     public void incorrectUser(){
         //4. Click on 'Signup / Login' button
-        homePage.TopBarClicks(TopBars.SIGNUP_LOGIN);
+        TopBarClicks(TopBars.SIGNUP_LOGIN);
         //5. Verify 'Login to your account' is visible
       //6. Enter incorrect email address and password
         //7. Click 'login' button

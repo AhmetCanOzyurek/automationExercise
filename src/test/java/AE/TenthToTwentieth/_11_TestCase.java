@@ -9,7 +9,7 @@ public class _11_TestCase extends TestBase {
     @Test
     public void CartNVerify() {
         //4. Click 'CartPage' button
-        homePage.TopBarClicks(TopBars.CART);
+        TopBarClicks(TopBars.CART);
         //5. Scroll down to footer.
         cartPage.scrollDownToEnd();
         //6. Verify text 'SUBSCRIPTION'

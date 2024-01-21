@@ -19,7 +19,7 @@ public class _5_TestCase extends TestBase {
     @Test(dependsOnMethods = {"initial"})
     public void ExistingEmail() {
         // 4. Click on 'Signup / Login' button
-        homePage.TopBarClicks(TopBars.SIGNUP_LOGIN);
+        TopBarClicks(TopBars.SIGNUP_LOGIN);
         // 5. Verify 'New User Signup!' is visible
 //6. Enter name and already registered email address
 //7. Click 'Signup' button

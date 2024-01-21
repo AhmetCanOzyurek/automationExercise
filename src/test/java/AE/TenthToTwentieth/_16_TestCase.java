@@ -8,7 +8,7 @@ public class _16_TestCase extends TestBase {
     @Test
     public void signUp() {
         //4. Click 'Signup / Login' button
-        homePage.TopBarClicks(TopBars.SIGNUP_LOGIN);
+        TopBarClicks(TopBars.SIGNUP_LOGIN);
         //5. Fill all details in Signup and create account
         sUpLogin.newUserSignUp();
         //6. Verify 'ACCOUNT CREATED!' and click 'Continue' button
@@ -22,7 +22,7 @@ public class _16_TestCase extends TestBase {
         //8. Add products to cartPage
         homePage.addProductsToCart(3);
         //9. Click 'CartPage' button
-        homePage.TopBarClicks(TopBars.CART);
+        TopBarClicks(TopBars.CART);
         //10. Verify that cartPage page is displayed
         cartPage.verifyCartPage();
     }
@@ -49,7 +49,7 @@ public class _16_TestCase extends TestBase {
     @Test(dependsOnMethods = "fillPaymentDetails")
     public void deleteAccount() {
         //17. Click 'Delete Account' button
-        homePage.TopBarClicks(TopBars.DELETE_ACCOUNT);
+        TopBarClicks(TopBars.DELETE_ACCOUNT);
         //18. Verify 'ACCOUNT DELETED!' and click 'Continue' button
         sUpLogin.verifyAccountDeleted();
     }

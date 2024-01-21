@@ -63,7 +63,7 @@ public class _1_Case extends TestBase {
     public void accountCreate() {
         test2.info("Account create test initialize");
         // 4. Click on 'Signup / Login' button
-        homePage.TopBarClicks(TopBars.SIGNUP_LOGIN);
+        TopBarClicks(TopBars.SIGNUP_LOGIN);
         // 5. Verify 'New User Signup!' is visible
         // 6. Enter name and email address
         // 7. Click 'Signup' button
@@ -107,7 +107,7 @@ public class _1_Case extends TestBase {
     public void deleteAccount(){
         test4.info("Delete account test initialized");
        // 17. Click 'Delete Account' button//*[text()=' Delete Account']
-        homePage.TopBarClicks(TopBars.DELETE_ACCOUNT);
+        TopBarClicks(TopBars.DELETE_ACCOUNT);
 
         try {
             // 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button

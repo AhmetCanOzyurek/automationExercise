@@ -8,10 +8,11 @@ import static Pages.HomePage.HomePageLocators.lTestCaseSign;
 
 public class _7_testCase extends TestBase {
 
+    
     @Test(dependsOnMethods = {"initial"})
     public void testCasesPage(){
       //4. Click on 'Test Cases' button
-        homePage.TopBarClicks(TopBars.TEST_CASES);
+        TopBarClicks(TopBars.TEST_CASES);
       //5. Verify user is navigated to test cases page successfully
        verifyVisibility(lTestCaseSign);
     }

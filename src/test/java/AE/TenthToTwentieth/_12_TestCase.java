@@ -8,7 +8,7 @@ public class _12_TestCase extends TestBase {
     @Test
     public void AddProductsInCart() {
         // 4. Click 'Products' button
-        homePage.TopBarClicks(TopBars.PRODUCTS);
+        TopBarClicks(TopBars.PRODUCTS);
         // 5. Hover over first product and click 'Add to cartPage'
         // 6. Click 'Continue Shopping' button
         // 7. Hover over second product and click 'Add to cartPage'

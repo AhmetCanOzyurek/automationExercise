@@ -7,17 +7,9 @@ import utilities.TestBase;
 
 import static utilities.Locators.*;
 public class _24_TestCase extends TestBase {
-    HomePage homePage;
-    @Test
-    public void goToSite(){
-        HomePage homePage = new HomePage();
-        // 1. Launch browser
-        // 2. Navigate to url 'http://automationexercise.com'
-        homePage.navigateToSite();
-        // 3. Verify that home page is visible successfully
-        homePage.verifyMainPage();
-    }
-@Test(dependsOnMethods = {"goToSite"})
+
+
+@Test
     public void addProducts() {
         homePage = new HomePage();
 //4. Add products to cart

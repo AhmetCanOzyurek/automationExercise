@@ -1,20 +1,14 @@
 package AE.TwentyFirstToTwentySixth;
 
-import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
 import org.testng.annotations.Test;
 import utilities.TestBase;
+
 import static utilities.Locators.*;
 
 public class _23_TestCase extends TestBase {
     @Test
     public void verifyAdressDetailsTest(){
-        HomePage homePage = new HomePage();
-        // 1. Launch browser
-        // 2. Navigate to url 'http://automationexercise.com'
-        homePage.navigateToSite();
-        // 3. Verify that home page is visible successfully
-        homePage.verifyMainPage();
 //        4. Click 'Signup / Login' button
         TopBarClicks(TopBars.SIGNUP_LOGIN);
 //        5. Fill all details in Signup and create account

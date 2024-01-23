@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 import static Pages.Products.ProductsLocators.*;
-import static utilities.Locators.lProductsInCart;
+import static utilities.Locators.*;
 
 public class Products extends TestBase {
 
@@ -182,5 +182,23 @@ public class Products extends TestBase {
     public void verifyBrandPage() {
         verifyVisibility(lBrandText);
     }
+    public void writeAReview(String name,
+                                String email, String review){
+        verifyVisibility(lWriteYourReviewtxt);
+        WebElement reviewNameBox = driver.findElement(lReviewNameBox);
+        WebElement reviewEmailBox = driver.findElement(lReviewEmailBox);
+        WebElement reviewBox = driver.findElement(lReviewBox);
+        WebElement reviewSubmit = driver.findElement(lReviewSubmit);
+        scrollIntoWiev(reviewBox);
 
+        actions.sendKeys(reviewNameBox,name)
+                .sendKeys(reviewEmailBox,email)
+                .sendKeys(reviewBox,review)
+                .scrollToElement(reviewSubmit)
+                .click(reviewSubmit)
+                .build()
+                .perform();
+        verifyVisibility(lReviewSuccessTxt);
+
+    }
 }

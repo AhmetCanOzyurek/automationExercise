@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise TestNG Project.&#10;part/21">
+    <list default="true" id="8912c8ab-a478-40e2-a0d0-56ef881802fd" name="Changes" comment="Revisions for my automationExercise TestNG Project.&#10;part/23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_7_testCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/FirstToTenth/_7_testCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_20_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TenthToTwentieth/_20_TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AE/TwentyFirstToTwentySixth/_21_TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AE/TwentyFirstToTwentySixth/_21_TestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Products/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Products/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Locators.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,10 +280,10 @@
       <item itemvalue="Application._11_TestCase" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
-      <item itemvalue="TestNG._16_TestCase" />
       <item itemvalue="TestNG._14_TestCase" />
       <item itemvalue="TestNG._15_TestCase" />
       <item itemvalue="TestNG._15_TestCase.placeOrder" />
+      <item itemvalue="TestNG._16_TestCase" />
       <item itemvalue="TestNG._2_CaseAX" />
     </list>
     <recent_temporary>
@@ -299,7 +299,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-20.0.2-azul-20.0.2-e1d2075fd9a7-278595b0" />
+        <option value="jdk-20.0.2-azul-20.0.2-4caba194b151-895bf479" />
       </set>
     </attachedChunks>
   </component>
@@ -314,14 +314,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696351700462</updated>
-    </task>
-    <task id="LOCAL-00005" summary="AutomationExerciseTestCase5/ExistingUserCredentialTest">
-      <option name="closed" value="true" />
-      <created>1698397961134</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1698397961134</updated>
     </task>
     <task id="LOCAL-00006" summary="AutomationExerciseTestCase6/ContactUsFromTest">
       <option name="closed" value="true" />
@@ -707,7 +699,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705412821835</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Revisions for my automationExercise TestNG Project.&#10;part/22">
+      <option name="closed" value="true" />
+      <created>1705839921057</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1705839921058</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -722,8 +722,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project." />
-    <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/1" />
     <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/2" />
     <MESSAGE value="Little Arrangments." />
     <MESSAGE value="I was lying. There is no farewell :).&#10;OOP arrangments for my automationExercise Project.&#10;part/3" />
@@ -747,7 +745,9 @@
     <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/19" />
     <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/20" />
     <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/21" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise TestNG Project.&#10;part/21" />
+    <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/22" />
+    <MESSAGE value="Revisions for my automationExercise TestNG Project.&#10;part/23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revisions for my automationExercise TestNG Project.&#10;part/23" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

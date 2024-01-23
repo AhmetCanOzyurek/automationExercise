@@ -1,33 +1,27 @@
 package AE.TwentyFirstToTwentySixth;
 
-import Pages.HomePage.HomePage;
 import Pages.HomePage.TopBars;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
-import static utilities.Locators.*;
+import static utilities.Locators.lAllProductsTxt;
 
 public class _21_TestCase extends TestBase {
     @Test
-    public void addReviewOnProduct(){
-        HomePage homePage = new HomePage();
-        // 1. Launch browser
-        // 2. Navigate to url 'http://automationexercise.com'
-        homePage.navigateToSite();
-        // 3. Verify that home page is visible successfully
-        homePage.verifyMainPage();
+    public void clickAndVerifyProductPage() {
 //        3. Click on 'Products' button
         TopBarClicks(TopBars.PRODUCTS);
 //        4. Verify user is navigated to ALL PRODUCTS page successfully
         verifyVisibility(lAllProductsTxt);
+    }
+    @Test(dependsOnMethods = "clickAndVerifyProductPage")
+    public void viewProduct(){
 //        5. Click on 'View Product' button
-        scrollIntoWiev(lviewProduct);
-        click(lviewProduct);
+        products.clickFIViewProduct();
 //        6. Verify 'Write Your Review' is visible
 //        7. Enter name, email and review
 //        8. Click 'Submit' button
 //        9. Verify success message 'Thank you for your review.'
-        writeAReview("Ahmet","a@gmail.com","thanks for the beatiful product");
-
+        products.writeAReview("Ahmet","a@gmail.com","helavelavelvela");
     }
 }

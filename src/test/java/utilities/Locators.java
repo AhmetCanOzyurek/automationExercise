@@ -22,10 +22,7 @@ public interface Locators {
                 //Men category
                     By lMenTshirt = By.xpath("//a[contains(text(),'Tshirts')]");
                         //Men TshirtPage
-                            By lMenTshirtPageTxt = By.xpath("//*[contains(text(),'Men > Tshirts')]");
-            By lBrands = By.xpath("//*[text()='Brands']");
-                By lPoloBrand = By.cssSelector("ul li a[href = '/brand_products/Polo']");
-                    By lBrandText = By.xpath("//li[@class='active']");
+                            By lMenTshirtPageTxt = By.xpath("//*[contains(text(),'Men > Tshirts')]");By lPoloBrand = By.cssSelector("ul li a[href = '/brand_products/Polo']");
                 By lHMbrand = By.cssSelector("ul li a[href = '/brand_products/H&M']");
                     By lHmBrandPageTxt = By.xpath("//*[text()='Brand - H&M Products']");
         //TopBar

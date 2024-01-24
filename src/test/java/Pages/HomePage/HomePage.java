@@ -47,4 +47,13 @@ public class HomePage extends TestBase {
             click(lContinueShopping);
         }
     }
+    public void verifyRecommendedItems(){
+        scrollIntoWiev(lRecommendItemsTxt);
+        verifyVisibility(lRecommendItemsTxt);
+    }
+  public void addToCartRecommmendedItem(){
+        click(lRecommendedAddToCart);
+  }
+
+
 }

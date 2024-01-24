@@ -17,7 +17,6 @@ public interface Locators {
 
             By lRecommendItemsTxt = By.xpath("//*[text()='recommended items']");
                 //RecommendedItems
-                By lRecommendedAddToCart = By.xpath("//div[@id='recommended-item-carousel']//a[@data-product-id='1']");
             By lMenCategoru = By.xpath("(//span[@class='badge pull-right'])[2]");
                 //Men category
                     By lMenTshirt = By.xpath("//a[contains(text(),'Tshirts')]");

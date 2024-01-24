@@ -241,30 +241,12 @@ WebElement element1 = driver.findElement(lSearchButton);
         }
 
     }
-protected void writeAReview(String name,
-                            String email, String review){
-    verifyVisibility(lWriteYourReviewtxt);
-    WebElement reviewNameBox = driver.findElement(lReviewNameBox);
-    WebElement reviewEmailBox = driver.findElement(lReviewEmailBox);
-    WebElement reviewBox = driver.findElement(lReviewBox);
-    WebElement reviewSubmit = driver.findElement(lReviewSubmit);
-    scrollIntoWiev(reviewBox);
 
-    actions.sendKeys(reviewNameBox,name)
-            .sendKeys(reviewEmailBox,email)
-            .sendKeys(reviewBox,review)
-            .scrollToElement(reviewSubmit)
-            .click(reviewSubmit)
-            .build()
-            .perform();
-    verifyVisibility(lReviewSuccessTxt);
-
-}
 protected void verifyFileDownloaded(){
 String dynamicFilePath = System.getProperty("user.home")+"/Downloads/invoice.txt";
 softAssert.assertTrue(Files.exists(Paths.get(dynamicFilePath)));
 }
-protected void assertItemNames(String expectedItemName, By actualElementLocator){
+public void assertItemNames(String expectedItemName, By actualElementLocator){
     String actualItemName = driver.findElement(actualElementLocator).getText();
     softAssert.assertEquals(actualItemName, expectedItemName);
 
@@ -275,6 +257,9 @@ protected WebElement getShadowRoots(By shadowRootLocator, By elementLocator){
 return eShadowRoot.getShadowRoot().findElement(elementLocator);
 
 
+}
+public void clickViewCart(){
+    click(lWievCart);
 }
     @AfterTest
     public  void tearDown() {

@@ -1,24 +1,28 @@
 package AE.TwentyFirstToTwentySixth;
 
-import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
-import static utilities.Locators.*;
+import static utilities.Locators.lBlueTop;
 
 public class _22_TestCase extends TestBase {
     @Test
-    public void RecommendedItems(){
+    public void scrollDownAndVerifyRecommendedItems(){
 //        3. Scroll to bottom of page
-        actions.sendKeys(Keys.END);
+        homePage.scrollDownToEnd();
 //        4. Verify 'RECOMMENDED ITEMS' are visible
-        verifyVisibility(lRecommendItemsTxt);
+        homePage.verifyRecommendedItems();}
+
+    /**
+     * (add To Cart Recommended Items And Verify Product Is Visible In Cart Page)
+     */
+        @Test
+        public void addToCartRecommendedItemsAndVerifyProductIsVisibleInCartPage(){
 //        5. Click on 'Add To CartPage' on Recommended product
-        scrollIntoWiev(lRecommendItemsTxt);
-        click(lRecommendedAddToCart);
+        homePage.addToCartRecommmendedItem();
 //        6. Click on 'View CartPage' button
-        click(lWievCart);
+        homePage.clickViewCart();
 //        7. Verify that product is displayed in cart page
-        assertItemNames("Blue Top", lBlueTop);
+        homePage.assertItemNames("Blue Top", lBlueTop);
     }
 }

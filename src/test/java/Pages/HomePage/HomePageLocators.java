@@ -61,4 +61,6 @@ public interface HomePageLocators {
     By lMainPageFirstItemViewProd =By.xpath("(//*[text()='View Product'])[1]");
     By lContinueShopping = By.xpath("//*[.='Continue Shopping']");
 
+
+
 }

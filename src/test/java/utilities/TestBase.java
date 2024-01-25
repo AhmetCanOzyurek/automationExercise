@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.asserts.SoftAssert;
 import utility.Driver;
@@ -50,18 +51,21 @@ public class TestBase {
         wait  = new WebDriverWait(driver, Duration.ofSeconds(10));
         jse = (JavascriptExecutor) driver;
         actions = new Actions(driver);
+
     homePage = new HomePage();
     cartPage = new CartPage();
     sUpLogin = new SUpLogin();
     products = new Products();
     contactUs = new ContactUs();
-    // 1. Launch browser
-    // 2. Navigate to url 'http://automationexercise.com'
-    homePage.navigateToSite();
-    // 3. Verify that home page is visible successfully
-    homePage.verifyMainPage();
     }
-
+    @BeforeClass
+    public void openingSite(){
+        // 1. Launch browser
+        // 2. Navigate to url 'http://automationexercise.com'
+        homePage.navigateToSite();
+        // 3. Verify that home page is visible successfully
+        homePage.verifyMainPage();
+    }
 
     public void click(By locator){
     scrollIntoWiev(locator);

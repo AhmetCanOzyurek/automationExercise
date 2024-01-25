@@ -49,7 +49,7 @@ public interface Locators {
             By lSignupLogin = By.xpath("//*[text()=' Signup / Login']");
     By lContinueShopping = By.xpath("//*[.='Continue Shopping']");
     By lShoppingCartTxt = By.xpath("//*[text()='Shopping CartPage']");
-    By lWievCart = By.xpath("//*[text()='View CartPage']");
+    By lWievCart = By.xpath("//*[text()='View Cart']");
     By lviewProduct = By.xpath("(//*[text()='View Product'])[1]");
         //viewProductPage
         By lWriteYourReviewtxt = By.xpath("//a[text()='Write Your Review']");

@@ -15,8 +15,8 @@ public interface HomePageLocators {
 
     By lRecommendItemsTxt = By.xpath("//*[text()='recommended items']");
     //RecommendedItems
-    By lRecommendedAddToCart = By.xpath("//div[@id='recommended-item-carousel']//a[@data-product-id='1']");
-
+    By lRecommendedAddToCart = By.xpath("//div[@id='recommended-item-carousel']//a[contains(@class, 'add-to-cart')]");
+  By lRecommendedItemRightButton= By.xpath("(//*[@class='fa fa-angle-right'])[2]");
     //SideBar
     By lCategoryLeftSide = By.xpath("//h2[text()='Category']");
         By lWomenCategoru = By.xpath("(//span[@class='badge pull-right'])[1]");

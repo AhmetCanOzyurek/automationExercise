@@ -10,9 +10,9 @@ public class _25_TestCase extends TestBase {
         @Test(dependsOnMethods = {"goToSite"})
     public void scrollDown() {
 //        4. Scroll down page to bottom
-            scrollIntoWiev(lSubsTextDownPage);
+            homePage.scrollDownToEnd();
 //        5. Verify 'SUBSCRIPTION' is visible
-            verifyVisibility(lSubsTextDownPage);
+            homePage.verifySubsTxt();
         }
         @Test(dependsOnMethods = {"scrollDown"})
     public void moveUpward(){

@@ -6,7 +6,7 @@ import utilities.TestBase;
 import static utilities.Locators.lBlueTop;
 
 public class _22_TestCase extends TestBase {
-    @Test
+    @Test(priority = 1)
     public void scrollDownAndVerifyRecommendedItems(){
 //        3. Scroll to bottom of page
         homePage.scrollDownToEnd();
@@ -16,7 +16,7 @@ public class _22_TestCase extends TestBase {
     /**
      * (add To Cart Recommended Items And Verify Product Is Visible In Cart Page)
      */
-        @Test
+        @Test(priority = 2)
         public void addToCartRecommendedItemsAndVerifyProductIsVisibleInCartPage(){
 //        5. Click on 'Add To CartPage' on Recommended product
         homePage.addToCartRecommmendedItem();

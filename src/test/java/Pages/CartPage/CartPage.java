@@ -56,4 +56,8 @@ public class CartPage extends TestBase {
 
         click(By.xpath("//*[text()='Continue']"));
     }
+    public void downloadAndVerifyFile(){
+        click(lDownloadInvoice);
+        verifyFileDownloaded();
+    }
 }

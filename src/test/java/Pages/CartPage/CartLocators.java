@@ -9,5 +9,6 @@ public interface CartLocators {
     By lDescription = By.cssSelector(".form-control");
     By lPlaceOrder = By.xpath("//*[text()='Place Order']");
     By lNameOnCard = By.xpath("//*[@name='name_on_card']");
+    By lDownloadInvoice = By.xpath("//*[.='Download Invoice']");
 
 }

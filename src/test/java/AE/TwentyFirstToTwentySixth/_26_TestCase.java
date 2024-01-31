@@ -1,6 +1,5 @@
 package AE.TwentyFirstToTwentySixth;
 
-import Pages.HomePage.HomePage;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -10,8 +9,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 import utility.Driver;
-
-import static utilities.Locators.*;
 public class _26_TestCase extends TestBase {
 ExtentSparkReporter html;
 ExtentReports extentReport;
@@ -39,7 +36,6 @@ ExtentTest test3;
     @Test
     public void first() {
         test1.info("Sayfa acilis testi basladi");
-        HomePage homePage = new HomePage();
         // 1. Launch browser
         // 2. Navigate to url 'http://automationexercise.com'
         homePage.navigateToSite();
@@ -57,10 +53,10 @@ ExtentTest test3;
 public void scrollDownBottom(){
         test2.info("scroll down to bottom test initialized");
 //4. Scroll down page to bottom
-        scrollIntoWiev(lSubsTextDownPage);
+        homePage.scrollDownToEnd();
 //5. Verify 'SUBSCRIPTION' is visible
         try {
-            verifyVisibility(lSubsTextDownPage);
+            homePage.verifySubsTxt();
             test2.pass("Test 2 Passed");
         } catch (AssertionError e) {
             test2.fail("Test 2 failed, "+ e.getMessage());
@@ -75,13 +71,12 @@ public void scrollDownBottom(){
 //        scrollIntoWiev(lmainPage);
 //7. Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
         try {
-            verifyVisibility(lFullFledgedtxt);
+            homePage.verifyFullFledgedText();
             test3.pass("Test 3 Passed");
         } catch (AssertionError e) {
             test3.fail("Test 3 failed, "+ e.getMessage());
             Assert.fail(e.getMessage());
         }
         test3.info("Scroll up to top test finished");
-
     }
 }

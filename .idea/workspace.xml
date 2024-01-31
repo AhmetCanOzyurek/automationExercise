@@ -104,7 +104,7 @@
       <recent name="AE" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG._25_TestCase">
+  <component name="RunManager" selected="TestNG._26_TestCase">
     <configuration name="_11_TestCase" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._11_TestCase" />
       <module name="automationExercise" />
@@ -168,23 +168,6 @@
         <value defaultName="moduleWithDependencies" />
       </option>
       <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_16_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automationExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AE.TenthToTwentieth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AE.TenthToTwentieth" />
-      <option name="MAIN_CLASS_NAME" value="AE.TenthToTwentieth._16_TestCase" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -259,6 +242,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_26_TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automationExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AE.TwentyFirstToTwentySixth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AE.TwentyFirstToTwentySixth" />
+      <option name="MAIN_CLASS_NAME" value="AE.TwentyFirstToTwentySixth._26_TestCase" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_9_TestCase.searchProduct" type="TestNG" nameIsGenerated="true">
       <module name="automationExercise" />
       <extension name="coverage">
@@ -281,19 +281,19 @@
       <item itemvalue="Application._11_TestCase" />
       <item itemvalue="TestNG._12_TestCase.AddProductsInCart" />
       <item itemvalue="TestNG._9_TestCase.searchProduct" />
+      <item itemvalue="TestNG._26_TestCase" />
       <item itemvalue="TestNG._21_TestCase" />
       <item itemvalue="TestNG._22_TestCase" />
       <item itemvalue="TestNG._24_TestCase" />
       <item itemvalue="TestNG._25_TestCase" />
-      <item itemvalue="TestNG._16_TestCase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG._26_TestCase" />
         <item itemvalue="TestNG._25_TestCase" />
         <item itemvalue="TestNG._22_TestCase" />
         <item itemvalue="TestNG._21_TestCase" />
         <item itemvalue="TestNG._24_TestCase" />
-        <item itemvalue="TestNG._16_TestCase" />
       </list>
     </recent_temporary>
   </component>

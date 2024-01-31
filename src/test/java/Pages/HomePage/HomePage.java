@@ -6,6 +6,7 @@ import utilities.TestBase;
 
 import static Pages.HomePage.HomePageLocators.*;
 import static utilities.Locators.lContinueShopping;
+import static utilities.Locators.lFullFledgedtxt;
 
 public class HomePage extends TestBase {
 
@@ -67,6 +68,12 @@ public class HomePage extends TestBase {
         }else{
         click(lRecommendedAddToCart);
         }
+    }
+    public void scrollUpToTheTop(){
+        click(lUpwardArrow);
+    }
+    public void verifyFullFledgedText(){
+        verifyVisibility(lFullFledgedtxt);
     }
 
 
